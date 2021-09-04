@@ -1,0 +1,92 @@
+@import "./vars";
+/*************
+    body
+*************/
+.container,
+body {
+    position: relative;
+}
+
+/*************
+    ul
+*************/
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/*************
+    section
+*************/
+footer,
+section {
+    padding-top: 100px;
+}
+
+/*************
+    a (link)
+*************/
+a {
+    outline: none;
+    color: inherit;
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+/*************
+    Button
+**************/
+button {
+    outline: none;
+}
+
+.base-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        svg path {
+            transition: all 0.5s ease;
+        }
+        &:hover  {
+            color: $mainColor;
+            svg path {
+            fill: $mainColor
+        }
+    }
+}
+
+.overlay {
+    @include overlay()
+}
+
+.container {
+    @media #{$minSmall} {
+        max-width: 100%;
+    }
+    @media #{$minLarge} {
+        max-width: 90%;
+    }
+}
+
+.heading {
+    .flexy-heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img:first-of-type {
+            margin-left: 10px;
+        }
+        img:last-of-type {
+            margin-right: 10px;
+        }
+    }
+
+    @media #{$maxMobile} {
+        img {
+            width: 100px;
+        }
+    }
+}
