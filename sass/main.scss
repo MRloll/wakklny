@@ -7,6 +7,9 @@ header {
     height: 100vh;
     position: relative;
     nav.navbar-dark {
+        .navbar-brand img {
+            width: 70px;
+        }
         .navbar-toggler {
             border-color: white;
             outline: none;
@@ -32,7 +35,7 @@ header {
     }
     .demo {
         min-height: 500px;
-        .carousel-indicators  {
+        .carousel-indicators {
             li {
                 cursor: pointer;
                 width: 20px;
@@ -44,42 +47,14 @@ header {
             }
         }
     }
-    .services {
-        .item {     
-            cursor: pointer;
-            .img {
-                position: relative;
-                display: flex;
-                justify-content: center;
-                align-items: center;                
-                text-align: center;
-                border-radius: 50%;
-                height: 120px;
-                background: #fff;
-                width: 120px;
-                margin: auto;
-                border: 2px solid #38245F;      
-                overflow: hidden;   
-                margin-bottom: -44px;
-            }
-            .wrapper {
-                border-radius: 6px;
-                height: 100px;
-                transition:all  0.5s ease;
-                background-color: #fff;
-                text-align: center;
-                .text {
-                    padding: 50px 0px;
-                    font-weight: bold;
-                }
-            }
-
-        }
+    button.base-button {
+        background: transparent;
+        border: 1px solid #fff;
     }
     .white-line {
         position: absolute;
         bottom: 0;
-        height: 58px;
+        height: 104px;
         width: 100%;
         right: 0;
         background-color: white;
@@ -95,8 +70,12 @@ header {
     }
 
     @media #{$minMedium} {
-        
-        ul.navbar-nav  {
+        nav.navbar-dark {
+            .navbar-brand img {
+                width: 100px;
+            }
+        }
+        ul.navbar-nav {
             margin-right: 100px;
             li.nav-item {
                 margin-left: 10px;
@@ -121,12 +100,11 @@ header {
     }
 }
 
-
 .about-us-section {
     .wrapper {
         display: flex;
         flex-wrap: wrap;
-        & >div {
+        & > div {
             width: 100%;
         }
     }
@@ -139,6 +117,110 @@ header {
     }
 }
 
+.services {
+    .advantages {
+        div[class^="col-"] {
+            margin-top: 15px;
+        }
+        .item {
+            .img {
+                border: none;
+            }
+            .wrapper {
+                border: 1px solid #e4ddef;
+                height: 200px;
+                .text {
+                    padding: 10px;
+                    padding-top: 40px;
+                    background-color: none;
+                }
+            }
+        }
+    }
+}
+
+.packages {
+    .wrapper {
+        box-shadow: 0px 3px 31px -12px #8b8686;
+        padding: 20px 0;
+        .package-serve {
+            .serve {
+                display: flex;
+                align-items: center;
+                text-align: right;
+                padding: 10px;
+                span {
+                    margin-right: 10px;
+                }
+            }
+        }
+        .ask-serve {
+            button.base-button {
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.sponsors {
+    div[class^="col-"] {
+        margin: 15px 0;
+    }
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #e4ddef;
+        border-radius: 6px;
+        cursor: pointer;
+        height: 100%;
+        img {
+            width: 200px;
+            height: 200px;
+            filter: grayscale(100%);
+            transition: all 0.5s ease;
+        }
+        &:hover {
+            img {
+                filter: grayscale(0);
+            }
+        }
+    }
+    @media #{$maxMobile} {
+        .wrapper img {
+            width: 100%;
+        }
+    }
+}
+
+.contact-us {
+    .form {
+        form {
+            .phone-form {
+                width: 70px;
+                margin-left: 20px;
+            }
+            .number-form {
+                width: calc(100% - 93px);
+            }
+            input[type="submit"] {
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+    }
+    iframe {
+        min-height: 600px;
+    }
+    @media #{minMeduim} {
+        iframe {
+            height: 100%;
+        }
+    }
+}
 body {
-    height: 3000px;
+    height: 7000px;
 }

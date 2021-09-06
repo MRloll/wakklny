@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="126.589" height="105.792" viewBox="0 0 126.589 105.792">
+  <g id="diamond" transform="translate(0 -42.058)">
+    <path id="Path_907" data-name="Path 907" d="M33.143,79.726H3.738a3.738,3.738,0,0,1-2.661-6.363L30.855,43.171a3.737,3.737,0,0,1,2.661-1.113h14.7a3.738,3.738,0,0,1,3.344,5.408L36.487,77.658A3.737,3.737,0,0,1,33.143,79.726Z" transform="translate(0 0)" fill="#a0ebff"/>
+    <path id="Path_908" data-name="Path 908" d="M350.076,79.726h-29.4a3.738,3.738,0,0,1-3.344-2.068L302.251,47.466a3.738,3.738,0,0,1,3.344-5.408h14.7a3.739,3.739,0,0,1,2.661,1.113l29.779,30.192a3.738,3.738,0,0,1-2.661,6.363Z" transform="translate(-227.224)" fill="#73c8f0"/>
+    <path id="Path_909" data-name="Path 909" d="M117.142,75.891,136.4,42.058H166.55l19.2,33.833Z" transform="translate(-88.179)" fill="#d2f0ff"/>
+    <path id="Path_910" data-name="Path 910" d="M270.725,178.9,241.2,245.6a3.738,3.738,0,0,0,6.232,3.973l59.557-68.124a3.735,3.735,0,0,0,.92-2.558H270.725Z" transform="translate(-181.323 -103.005)" fill="#0073aa"/>
+    <path id="Path_911" data-name="Path 911" d="M37.194,178.9H.01a3.735,3.735,0,0,0,.92,2.558l59.557,68.124a3.738,3.738,0,0,0,6.232-3.973Z" transform="translate(-0.007 -103.006)" fill="#41b4e6"/>
+    <path id="Path_912" data-name="Path 912" d="M117.142,178.9l30.914,69.734a3.738,3.738,0,0,0,6.836,0L185.747,178.9Z" transform="translate(-88.179 -103.006)" fill="#a0ebff"/>
+    <path id="Path_913" data-name="Path 913" d="M255.88,75.891h34.3l-19.2-33.833H255.88Z" transform="translate(-192.615)" fill="#41b4e6"/>
+    <path id="Path_914" data-name="Path 914" d="M256,250.856a3.738,3.738,0,0,0,3.418-2.225L290.273,178.9H256Z" transform="translate(-192.705 -103.006)" fill="#73c8f0"/>
+  </g>
+</svg>

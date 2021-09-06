@@ -43,23 +43,35 @@ button {
     outline: none;
 }
 
+.btn:active {
+    background-image: $gradient-lay !important;
+}
+
 .base-button {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: $gradient-lay;
+    color: white;
+    margin: 20px auto;
+    width: 180px;
+    height: 50px;
+    border: none;
+
+    svg path {
+        transition: all 0.5s ease;
+    }
+    &:hover {
+        color: $mainColor;
         svg path {
-            transition: all 0.5s ease;
-        }
-        &:hover  {
-            color: $mainColor;
-            svg path {
-            fill: $mainColor
+            fill: $mainColor;
         }
     }
 }
 
 .overlay {
-    @include overlay()
+    @include overlay();
 }
 
 .container {
@@ -87,6 +99,43 @@ button {
     @media #{$maxMobile} {
         img {
             width: 100px;
+        }
+    }
+}
+
+header .advantages,
+.services .advantages {
+    .item {
+        cursor: pointer;
+        .img {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-radius: 50%;
+            min-height: 120px;
+            background: #fff;
+            width: 120px;
+            margin: auto;
+            border: 2px solid #38245f;
+            overflow: hidden;
+            margin-bottom: -44px;
+        }
+        .wrapper {
+            border-radius: 6px;
+            min-height: 150px;
+            transition: all 0.5s ease;
+            background-color: #fff;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            .text {
+                font-weight: bold;
+                width: 100%;
+            }
         }
     }
 }

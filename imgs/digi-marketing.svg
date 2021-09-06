@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="87.422" height="86.994" viewBox="0 0 87.422 86.994">
+  <g id="digi-marketing" transform="translate(-2 -1.299)">
+    <path id="Path_814" data-name="Path 814" d="M11,34v5.733A2.866,2.866,0,0,0,13.866,42.6h12.9a2.866,2.866,0,0,0,2.866-2.866V34" transform="translate(3.898 14.164)" fill="#3b5892"/>
+    <path id="Path_815" data-name="Path 815" d="M23.9,36.866V34H11v4.3H22.465A1.433,1.433,0,0,0,23.9,36.866Z" transform="translate(3.898 14.164)" fill="#4c6cb5"/>
+    <path id="Path_816" data-name="Path 816" d="M14.9,17H27.8V42.8H14.9a12.9,12.9,0,0,1,0-25.8Z" transform="translate(0 6.801)" fill="#5e87ca"/>
+    <path id="Path_817" data-name="Path 817" d="M23.5,37.064V17H14.9A12.87,12.87,0,0,0,2.844,34.454a12.821,12.821,0,0,0,7.755,2.61Z" transform="translate(0 6.801)" fill="#78a0d4"/>
+    <path id="Path_818" data-name="Path 818" d="M20,23.631A44.979,44.979,0,0,0,51.8,10.457L57.262,5V65.192L51.8,59.735A44.979,44.979,0,0,0,20,46.561" transform="translate(7.797 1.603)" fill="#e2e7f6"/>
+    <path id="Path_819" data-name="Path 819" d="M46,19a10.032,10.032,0,1,1,0,20.064" transform="translate(19.058 7.667)" fill="#5e87ca"/>
+    <path id="Path_820" data-name="Path 820" d="M9,21H20.465v2.866H9Z" transform="translate(3.032 8.533)" fill="#3b5892"/>
+    <path id="Path_821" data-name="Path 821" d="M9,25H20.465v2.866H9Z" transform="translate(3.032 10.266)" fill="#3b5892"/>
+    <path id="Path_822" data-name="Path 822" d="M9,29H20.465v2.866H9Z" transform="translate(3.032 11.999)" fill="#3b5892"/>
+    <path id="Path_823" data-name="Path 823" d="M13,40V65.08a6.449,6.449,0,0,0,12.9,0V40" transform="translate(4.765 16.763)" fill="#5e87ca"/>
+    <g id="Group_80" data-name="Group 80" transform="translate(30.663 1.299)">
+      <path id="Path_824" data-name="Path 824" d="M22,40l1.26,1.26A10.379,10.379,0,0,0,30.6,44.3l-4.3,7.166H22" transform="translate(-22 15.464)" fill="#c8cded"/>
+      <path id="Path_825" data-name="Path 825" d="M0,0H18.241V2.866H0Z" transform="translate(43.405 12.896) rotate(-45)" fill="#c8cded"/>
+      <path id="Path_826" data-name="Path 826" d="M0,0H2.866V18.241H0Z" transform="translate(43.399 57.913) rotate(-45)" fill="#c8cded"/>
+      <path id="Path_827" data-name="Path 827" d="M56,25H66.032v2.866H56Z" transform="translate(-7.273 8.967)" fill="#c8cded"/>
+    </g>
+    <path id="Path_828" data-name="Path 828" d="M50.213,31.556V9.864A44.976,44.976,0,0,1,20,21.524v17.2H43.048A7.166,7.166,0,0,0,50.213,31.556Z" transform="translate(7.797 3.71)" fill="#f2f2f2"/>
+    <path id="Path_829" data-name="Path 829" d="M51.016,29.032V20.353A9.972,9.972,0,0,0,46,19V31.9h2.15A2.866,2.866,0,0,0,51.016,29.032Z" transform="translate(19.058 7.667)" fill="#78a0d4"/>
+    <path id="Path_830" data-name="Path 830" d="M20.548,40H13V65.08l.364.364h2.885a4.3,4.3,0,0,0,4.3-4.3Z" transform="translate(4.765 16.763)" fill="#78a0d4"/>
+    <path id="Path_831" data-name="Path 831" d="M24.866,46.449V42.571A10.378,10.378,0,0,1,23.26,41.26L22,40v7.882h1.433a1.433,1.433,0,0,0,1.433-1.433Z" transform="translate(8.663 16.763)" fill="#e2e7f6"/>
+  </g>
+</svg>

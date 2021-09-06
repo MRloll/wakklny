@@ -42,10 +42,21 @@ button {
   outline: none;
 }
 
+.btn:active {
+  background-image: linear-gradient(to right, #C3194D, #514596) !important;
+}
+
 .base-button {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(to right, #C3194D, #514596);
+  color: white;
+  margin: 20px auto;
+  width: 180px;
+  height: 50px;
+  border: none;
 }
 .base-button svg path {
   transition: all 0.5s ease;
@@ -96,11 +107,52 @@ button {
   }
 }
 
+header .advantages .item,
+.services .advantages .item {
+  cursor: pointer;
+}
+header .advantages .item .img,
+.services .advantages .item .img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  min-height: 120px;
+  background: #fff;
+  width: 120px;
+  margin: auto;
+  border: 2px solid #38245f;
+  overflow: hidden;
+  margin-bottom: -44px;
+}
+header .advantages .item .wrapper,
+.services .advantages .item .wrapper {
+  border-radius: 6px;
+  min-height: 150px;
+  transition: all 0.5s ease;
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+header .advantages .item .wrapper .text,
+.services .advantages .item .wrapper .text {
+  font-weight: bold;
+  width: 100%;
+}
+
 header {
   background: url(../imgs/home-bg.png) no-repeat;
   background-size: cover;
   height: 100vh;
   position: relative;
+}
+header nav.navbar-dark .navbar-brand img {
+  width: 70px;
 }
 header nav.navbar-dark .navbar-toggler {
   border-color: white;
@@ -134,39 +186,14 @@ header .demo .carousel-indicators li {
 header .demo .carousel-indicators li.active {
   width: 50px;
 }
-header .services .item {
-  cursor: pointer;
-}
-header .services .item .img {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-radius: 50%;
-  height: 120px;
-  background: #fff;
-  width: 120px;
-  margin: auto;
-  border: 2px solid #38245F;
-  overflow: hidden;
-  margin-bottom: -44px;
-}
-header .services .item .wrapper {
-  border-radius: 6px;
-  height: 100px;
-  transition: all 0.5s ease;
-  background-color: #fff;
-  text-align: center;
-}
-header .services .item .wrapper .text {
-  padding: 50px 0px;
-  font-weight: bold;
+header button.base-button {
+  background: transparent;
+  border: 1px solid #fff;
 }
 header .white-line {
   position: absolute;
   bottom: 0;
-  height: 58px;
+  height: 104px;
   width: 100%;
   right: 0;
   background-color: white;
@@ -180,6 +207,9 @@ header .white-line {
   }
 }
 @media (min-width: 992px) {
+  header nav.navbar-dark .navbar-brand img {
+    width: 100px;
+  }
   header ul.navbar-nav {
     margin-right: 100px;
   }
@@ -212,8 +242,87 @@ header .white-line {
   height: 500px;
 }
 
+.services .advantages div[class^=col-] {
+  margin-top: 15px;
+}
+.services .advantages .item .img {
+  border: none;
+}
+.services .advantages .item .wrapper {
+  border: 1px solid #e4ddef;
+  height: 200px;
+}
+.services .advantages .item .wrapper .text {
+  padding: 10px;
+  padding-top: 40px;
+  background-color: none;
+}
+
+.packages .wrapper {
+  box-shadow: 0px 3px 31px -12px #8b8686;
+  padding: 20px 0;
+}
+.packages .wrapper .package-serve .serve {
+  display: flex;
+  align-items: center;
+  text-align: right;
+  padding: 10px;
+}
+.packages .wrapper .package-serve .serve span {
+  margin-right: 10px;
+}
+.packages .wrapper .ask-serve button.base-button:hover {
+  color: white;
+}
+
+.sponsors div[class^=col-] {
+  margin: 15px 0;
+}
+.sponsors .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e4ddef;
+  border-radius: 6px;
+  cursor: pointer;
+  height: 100%;
+}
+.sponsors .wrapper img {
+  width: 200px;
+  height: 200px;
+  filter: grayscale(100%);
+  transition: all 0.5s ease;
+}
+.sponsors .wrapper:hover img {
+  filter: grayscale(0);
+}
+@media (max-width: 767px) {
+  .sponsors .wrapper img {
+    width: 100%;
+  }
+}
+
+.contact-us .form form .phone-form {
+  width: 70px;
+  margin-left: 20px;
+}
+.contact-us .form form .number-form {
+  width: calc(100% - 93px);
+}
+.contact-us .form form input[type=submit]:hover {
+  color: white;
+}
+.contact-us iframe {
+  min-height: 600px;
+}
+@media minMeduim {
+  .contact-us iframe {
+    height: 100%;
+  }
+}
+
 body {
-  height: 3000px;
+  height: 7000px;
 }
 
 /*# sourceMappingURL=main.css.map */
