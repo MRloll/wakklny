@@ -1,0 +1,11 @@
+<svg id="phone-call" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26.38" height="26.435" viewBox="0 0 26.38 26.435">
+  <defs>
+    <linearGradient id="linear-gradient" x2="0.859" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#b61e56"/>
+      <stop offset="1" stop-color="#653e89"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_128" data-name="Group 128" transform="translate(0 0)">
+    <path id="Path_928" data-name="Path 928" d="M26.227,19.4l-3.689-3.689a2.454,2.454,0,0,0-4.084.922,2.511,2.511,0,0,1-2.9,1.581c-2.635-.659-6.192-4.084-6.851-6.851a2.388,2.388,0,0,1,1.581-2.9,2.454,2.454,0,0,0,.922-4.084L7.518.692a2.631,2.631,0,0,0-3.557,0l-2.5,2.5c-2.5,2.635.264,9.618,6.456,15.81s13.175,9.091,15.81,6.456l2.5-2.5A2.631,2.631,0,0,0,26.227,19.4Z" transform="translate(-0.539 0)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

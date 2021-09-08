@@ -1,4 +1,8 @@
 $(function(){
+
+    // ===========================
+    // ======== Form Validation===
+    //============================
     let form = $("form"),
         emailREgx = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
@@ -12,7 +16,6 @@ $(function(){
         return false;
         return true;
     }
-
     
     $("form #phoneNom").on("keypress ", function(event) {
         return isNumberKey(event)
@@ -32,7 +35,6 @@ $(function(){
         }
     })
 
-
     $(form).on("submit", function(e) {
         for (let i = 0; i < $("form input").length; i++) {            
 
@@ -51,8 +53,32 @@ $(function(){
                 e.preventDefault();
             }
         }
-
     });
 
-})
+    // =========================
+    // cahnging modal content
+    // =========================
+
+    // services content
+    $(".advantages").on("click", function() {
+        $("#service-content").show();
+    });
+
+    $("button.service-content-close").on("click", function() {
+        $("#service-content").fadeOut();
+    });
+
+    // packages content
+    $(".packages button").on("click", function() {
+        $("#package-content").show();
+        console.log("yes")
+    });
+
+    $("button.package-content-close").on("click", function() {
+        $("#package-content").fadeOut();
+    });
+
+
+    
+});
 

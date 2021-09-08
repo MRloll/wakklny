@@ -41,6 +41,10 @@ a:hover {
 button {
   outline: none;
 }
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
 
 .btn:active {
   background-image: linear-gradient(to right, #C3194D, #514596) !important;
@@ -66,6 +70,11 @@ button {
 }
 .base-button:hover svg path {
   fill: #C3194D;
+}
+@media (max-width: 767px) {
+  .base-button {
+    width: 130px;
+  }
 }
 
 .overlay {
@@ -103,12 +112,15 @@ button {
 }
 @media (max-width: 767px) {
   .heading img {
-    width: 100px;
+    width: 85px;
+  }
+  .heading h2 {
+    font-size: 26px;
   }
 }
 
-header .advantages .item,
-.services .advantages .item {
+header .advantages,
+.services .advantages {
   cursor: pointer;
 }
 header .advantages .item .img,
@@ -145,6 +157,95 @@ header .advantages .item .wrapper .text,
   width: 100%;
 }
 
+.modal {
+  padding: 0 !important;
+  background-color: #040404;
+}
+.modal .modal-dialog {
+  max-width: inherit;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.modal .modal-dialog .modal-content {
+  height: 100%;
+  background-color: #040404;
+  position: absolute;
+  color: white;
+  border: none;
+}
+.modal .modal-dialog .modal-content#service-content {
+  display: none;
+}
+.modal .modal-dialog .modal-content#package-content {
+  display: none;
+}
+.modal .modal-dialog .modal-content#package-content .modal-body img {
+  width: 85px;
+}
+.modal .modal-dialog .modal-content#package-content .modal-footer button {
+  margin-top: 200px;
+}
+@media (max-width: 767px) {
+  .modal .modal-dialog .modal-content#package-content .modal-footer button {
+    margin-top: 20px;
+  }
+}
+.modal .modal-dialog .modal-content .container {
+  height: 100%;
+}
+.modal .modal-dialog .modal-content .container form {
+  height: 100%;
+}
+.modal .modal-dialog .modal-content .container form > .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  align-content: flex-start;
+}
+.modal .modal-dialog .modal-content .container form > .wrapper .modal-body div[class^=col-] {
+  margin-bottom: 20px;
+}
+.modal .modal-dialog .modal-content .container form > .wrapper .modal-body input {
+  display: none;
+}
+.modal .modal-dialog .modal-content .container form > .wrapper .modal-body input:checked ~ label {
+  border-color: #C3194D;
+}
+.modal .modal-dialog .modal-content .container form > .wrapper .modal-body label {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border: 1px solid #e4ddef;
+  border-radius: 6px;
+  padding: 20px;
+  transition: border 0.5s ease;
+}
+.modal .modal-dialog .modal-content .container form > .wrapper .modal-body label p {
+  margin-bottom: 0;
+}
+.modal .modal-dialog .modal-content .container form > .wrapper .modal-body label img {
+  margin-bottom: 20px;
+}
+.modal .modal-dialog .modal-content .container form > .wrapper .modal-footer,
+.modal .modal-dialog .modal-content .container form > .wrapper .modal-header {
+  border: none;
+  width: 100%;
+}
+.modal .modal-dialog .modal-content .container form > .wrapper .modal-header button {
+  margin: 0;
+  position: absolute;
+}
+.modal .modal-dialog .modal-content .container form > .wrapper .modal-header .heading {
+  margin: 50px auto 20px;
+}
+.modal .modal-dialog .modal-content .container form > .wrapper .modal-footer .base-button {
+  width: 300px;
+}
+.modal .modal-dialog .modal-content .container form > .wrapper .modal-footer .base-button:hover {
+  color: white;
+}
+
 header {
   background: url(../imgs/home-bg.png) no-repeat;
   background-size: cover;
@@ -176,6 +277,9 @@ header nav.navbar-dark ul.navbar-nav li.nav-item a.nav-link {
 }
 header .demo {
   min-height: 500px;
+}
+header .demo .carousel-indicators {
+  z-index: 1;
 }
 header .demo .carousel-indicators li {
   cursor: pointer;
@@ -271,7 +375,7 @@ header .white-line {
 .packages .wrapper .package-serve .serve span {
   margin-right: 10px;
 }
-.packages .wrapper .ask-serve button.base-button:hover {
+.packages .ask-serve button.base-button:hover {
   color: white;
 }
 
@@ -321,8 +425,20 @@ header .white-line {
   }
 }
 
-body {
-  height: 7000px;
+footer ul li {
+  margin-bottom: 20px;
+}
+footer ul.social li {
+  display: inline-block;
+  margin-left: 15px;
+}
+footer .copy-right img {
+  width: 40px;
+}
+@media (min-width: 992px) {
+  footer .paragraph {
+    width: 70%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -36,6 +36,7 @@ header {
     .demo {
         min-height: 500px;
         .carousel-indicators {
+            z-index: 1;
             li {
                 cursor: pointer;
                 width: 20px;
@@ -154,11 +155,11 @@ header {
                 }
             }
         }
-        .ask-serve {
-            button.base-button {
-                &:hover {
-                    color: white;
-                }
+    }
+    .ask-serve {
+        button.base-button {
+            &:hover {
+                color: white;
             }
         }
     }
@@ -221,6 +222,27 @@ header {
         }
     }
 }
-body {
-    height: 7000px;
+
+footer {
+    ul {
+        li {
+            margin-bottom: 20px;
+        }
+        &.social {
+            li {
+                display: inline-block;
+                margin-left: 15px;
+            }
+        }
+    }
+    .copy-right {
+        img {
+            width: 40px;
+        }
+    }
+    @media #{$minMedium} {
+        .paragraph {
+            width: 70%;
+        }
+    }
 }

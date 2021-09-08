@@ -41,6 +41,10 @@ a {
 **************/
 button {
     outline: none;
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
 }
 
 .btn:active {
@@ -58,7 +62,6 @@ button {
     width: 180px;
     height: 50px;
     border: none;
-
     svg path {
         transition: all 0.5s ease;
     }
@@ -67,6 +70,9 @@ button {
         svg path {
             fill: $mainColor;
         }
+    }
+    @media #{$maxMobile} {
+        width: 130px;
     }
 }
 
@@ -98,15 +104,18 @@ button {
 
     @media #{$maxMobile} {
         img {
-            width: 100px;
+            width: 85px;
+        }
+        h2 {
+            font-size: 26px;
         }
     }
 }
 
 header .advantages,
 .services .advantages {
+    cursor: pointer;
     .item {
-        cursor: pointer;
         .img {
             position: relative;
             display: flex;
@@ -135,6 +144,105 @@ header .advantages,
             .text {
                 font-weight: bold;
                 width: 100%;
+            }
+        }
+    }
+}
+
+.modal {
+    padding: 0 !important;
+    background-color: #040404;
+    .modal-dialog {
+        max-width: inherit;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        .modal-content {
+            height: 100%;
+            background-color: #040404;
+            position: absolute;
+            color: white;
+            border: none;
+            &#service-content {
+                display: none;
+            }
+            &#package-content {
+                display: none;
+                .modal-body {
+                    img {
+                        width: 85px;
+                    }
+                }
+                .modal-footer {
+                    button {
+                        margin-top: 200px;
+                    }
+                    @media #{$maxMobile} {
+                        button {
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+            .container {
+                height: 100%;
+                form {
+                    height: 100%;
+                    & > .wrapper {
+                        display: flex;
+                        flex-wrap: wrap;
+                        height: 100%;
+                        align-content: flex-start;
+                        .modal-body {
+                            div[class^="col-"] {
+                                margin-bottom: 20px;
+                            }
+                            input {
+                                display: none;
+                                &:checked ~ label {
+                                    border-color: $mainColor;
+                                }
+                            }
+                            label {
+                                width: 100%;
+                                height: 100%;
+                                cursor: pointer;
+                                border: 1px solid #e4ddef;
+                                border-radius: 6px;
+                                padding: 20px;
+                                transition: border 0.5s ease;
+                                p {
+                                    margin-bottom: 0;
+                                }
+                                img {
+                                    margin-bottom: 20px;
+                                }
+                            }
+                        }
+                        .modal-footer,
+                        .modal-header {
+                            border: none;
+                            width: 100%;
+                        }
+                        .modal-header {
+                            button {
+                                margin: 0;
+                                position: absolute;
+                            }
+                            .heading {
+                                margin: 50px auto 20px;
+                            }
+                        }
+                        .modal-footer {
+                            .base-button {
+                                width: 300px;
+                                &:hover {
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

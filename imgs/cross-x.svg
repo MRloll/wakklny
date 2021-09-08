@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+  <g id="cross-x" transform="translate(-1580 -165)">
+    <g id="Ellipse_539" data-name="Ellipse 539" transform="translate(1580 165)" fill="none" stroke="#707070" stroke-width="1">
+      <circle cx="22" cy="22" r="22" stroke="none"/>
+      <circle cx="22" cy="22" r="21.5" fill="none"/>
+    </g>
+    <path id="fi-rr-cross" d="M18.8.232h0a.793.793,0,0,0-1.121,0L9.516,8.4,1.354.232a.793.793,0,0,0-1.121,0h0a.793.793,0,0,0,0,1.121L8.4,9.516.232,17.679a.793.793,0,0,0,0,1.121h0a.793.793,0,0,0,1.121,0l8.163-8.163L17.679,18.8a.793.793,0,0,0,1.121,0h0a.793.793,0,0,0,0-1.121L10.638,9.516,18.8,1.354a.793.793,0,0,0,0-1.121Z" transform="translate(1592.484 177.484)" fill="#fff"/>
+  </g>
+</svg>
