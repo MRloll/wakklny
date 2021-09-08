@@ -12,7 +12,7 @@ $(function(){
 
     function isNumberKey(evt){
         var charCode = (evt.which) ? evt.which : event.keyCode
-        if (charCode > 31 && (charCode < 48 || charCode > 57))
+        if (charCode > 31 && (charCode < 48 || charCode > 57) &&  !evt.target.value.match(/[0-9]/))
         return false;
         return true;
     }
