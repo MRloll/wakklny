@@ -12,7 +12,7 @@
 
     <body>
 
-        <div class="modal fade text-center " id="modal" tabindex="-1" role="dialog"
+        <div class="modal fade text-center" id="modal" tabindex="-1" role="dialog"
             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content" id="service-content">
@@ -178,7 +178,65 @@
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-primary base-button">التالي</button>
+                                    <span class="btn btn-primary base-button to-order-form">التالي</span>
+                                </div>
+                            </div>
+                            <div class="order service-order text-right">
+                                <div class="modal-header">
+                                    <span class="close return position-absolute">
+                                        <img src="./imgs/return.png" alt="cross">
+                                    </span>
+                                    <div class="heading">
+                                        <div class="flexy-heading mb-3">
+                                            <img src="./imgs/heading-line.png" alt="line">
+                                            <h2>طلب خدمة</h2>
+                                            <img src="./imgs/heading-line.png" alt="line">
+                                        </div>
+                                        <p>
+                                            أملئ البيانات الخاصة بك وسيتم التواصل معك في أقرب وقت ممكن
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-md-6 col-12">
+                                            <div class="form-group">
+                                                <label for="name">أسمك بالكامل</label>
+                                                <input type="text" class="form-control name" id="name"
+                                                    placeholder="أكتب أسمك هنا">
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group  phone-form">
+                                                    <label for="phoneCode">رقم الجوال</label>
+                                                    <input type="text" readonly class="form-control " id="phoneCode"
+                                                        placeholder="+966">
+                                                </div>
+                                                <div class="form-group number-form">
+                                                    <label for="phoneNom" class="invisible">phone</label>
+                                                    <input maxlength="9" type="text" class="form-control phone-nom"
+                                                        id="phoneNom" placeholder="مثال : 12 345 6789">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-12">
+                                            <div class="form-group">
+                                                <label for="company-name">اسم الشركة أو المؤسسة</label>
+                                                <input type="text" class="form-control company-name" id="company-name"
+                                                    placeholder="أكتب الاسم هنا">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="email">البريد الإلكتروني</label>
+                                                <input type="email" class="form-control email" id="email"
+                                                    placeholder="مثال : example@gmail.com">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-primary bottom-button base-button"
+                                        data-target=".service-order">أطلب
+                                        الآن</button>
                                 </div>
                             </div>
                         </form>
@@ -256,7 +314,65 @@
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-primary base-button">التالي</button>
+                                    <span class="btn btn-primary base-button bottom-button to-order-form">التالي</span>
+                                </div>
+                            </div>
+                            <div class="order package-order text-right">
+                                <div class="modal-header">
+                                    <span class="close return position-absolute">
+                                        <img src="./imgs/return.png" alt="cross">
+                                    </span>
+                                    <div class="heading">
+                                        <div class="flexy-heading mb-3">
+                                            <img src="./imgs/heading-line.png" alt="line">
+                                            <h2>طلب باقة</h2>
+                                            <img src="./imgs/heading-line.png" alt="line">
+                                        </div>
+                                        <p>
+                                            أملئ البيانات الخاصة بك وسيتم التواصل معك في أقرب وقت ممكن
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-md-6 col-12">
+                                            <div class="form-group">
+                                                <label for="name">أسمك بالكامل</label>
+                                                <input type="text" class="form-control name" id="name"
+                                                    placeholder="أكتب أسمك هنا">
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group  phone-form">
+                                                    <label for="phoneCode">رقم الجوال</label>
+                                                    <input type="text" readonly class="form-control " id="phoneCode"
+                                                        placeholder="+966">
+                                                </div>
+                                                <div class="form-group number-form">
+                                                    <label for="phoneNom" class="invisible">phone</label>
+                                                    <input maxlength="9" type="text" class="form-control phone-nom"
+                                                        id="phoneNom" placeholder="مثال : 12 345 6789">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-12">
+                                            <div class="form-group">
+                                                <label for="company-name">اسم الشركة أو المؤسسة</label>
+                                                <input type="text" class="form-control" id="company-name"
+                                                    placeholder="أكتب الاسم هنا">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="email">البريد الإلكتروني</label>
+                                                <input type="email" class="form-control email" id="email"
+                                                    placeholder="مثال : example@gmail.com">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-primary bottom-button base-button"
+                                        data-target=".package-order">أطلب
+                                        الآن</button>
                                 </div>
                             </div>
                         </form>
@@ -905,11 +1021,10 @@
                         ھل تحتاج إلى حملة تسویق إلكتروني بمیزات واستھداف كبیر تواصل معنا الأن للقیام بدراسة مخصصة
                         لحملتكم الإعلانیة</p>
                     <div class="ask-serve">
-                        <form action="POST">
-                            <button class="btn base-button">
-                                أطلب الآن
-                            </button>
-                        </form>
+                        <button class="btn base-button " type="button" class="btn btn-primary" data-toggle="modal"
+                            data-target="#modal">
+                            أطلب الآن
+                        </button>
                     </div>
                 </div>
 
@@ -990,23 +1105,24 @@
                             <form>
                                 <div class="form-group">
                                     <label for="name">أسمك بالكامل</label>
-                                    <input type="text" class="form-control" id="name" placeholder="أكتب أسمك هنا">
+                                    <input type="text" class="form-control name" id="name" data-target="name"
+                                        placeholder="أكتب أسمك هنا">
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group  phone-form">
                                         <label for="phoneCode">رقم الجوال</label>
-                                        <input type="text" readonly class="form-control " id="phoneCode"
-                                            placeholder="+966">
+                                        <input type="text" readonly class="form-control phone" id="phoneCode"
+                                            data-target="phone" placeholder="+966">
                                     </div>
                                     <div class="form-group number-form">
                                         <label for="phoneNom" class="invisible">phone</label>
-                                        <input maxlength="9" type="text" class="form-control" id="phoneNom"
-                                            placeholder="مثال : 12 345 6789">
+                                        <input maxlength="9" type="text" class="form-control phone-nom" id="phoneNom"
+                                            data-target="email" placeholder="مثال : 12 345 6789">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="email">البريد الإلكتروني</label>
-                                    <input type="email" class="form-control" id="email"
+                                    <input type="email" class="form-control email" id="email"
                                         placeholder="مثال : example@gmail.com">
                                 </div>
                                 <div class="form-group">
@@ -1015,7 +1131,8 @@
                                         rows="10"></textarea>
                                 </div>
                                 <div class="form-group">
-                                    <input type="submit" class="base-button btn mx-0" value="ارسال">
+                                    <input data-target=".main-contact" type="submit" class="base-button btn mx-0"
+                                        value="ارسال">
                                 </div>
                             </form>
                         </div>

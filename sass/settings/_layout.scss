@@ -59,7 +59,7 @@ button {
     background: $gradient-lay;
     color: white;
     margin: 20px auto;
-    width: 180px;
+    width: 134px;
     height: 50px;
     border: none;
     svg path {
@@ -73,6 +73,17 @@ button {
     }
     @media #{$maxMobile} {
         width: 130px;
+    }
+}
+
+.bottom-button {
+    position: absolute;
+    bottom: 41px;
+    left: 50%;
+    transform: translateX(-50%);
+    @media #{$maxSmall} {
+        position: unset;
+        transform: translateX(0%);
     }
 }
 
@@ -173,16 +184,6 @@ header .advantages,
                         width: 85px;
                     }
                 }
-                .modal-footer {
-                    button {
-                        margin-top: 200px;
-                    }
-                    @media #{$maxMobile} {
-                        button {
-                            margin-top: 20px;
-                        }
-                    }
-                }
             }
             .container {
                 height: 100%;
@@ -228,6 +229,8 @@ header .advantages,
                             button {
                                 margin: 0;
                                 position: absolute;
+                                top: 10px;
+                                right: 15px;
                             }
                             .heading {
                                 margin: 50px auto 20px;
@@ -241,6 +244,48 @@ header .advantages,
                                 }
                             }
                         }
+                    }
+                }
+            }
+            .order {
+                display: none;
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                background-color: #040404;
+                .modal-header {
+                    border: none;
+                    span {
+                        margin: 0;
+                        position: absolute;
+                        top: 10px;
+                        right: 15px;
+                    }
+                    .heading {
+                        margin: 50px auto 20px;
+                    }
+                }
+                .modal-body,
+                .modal-footer {
+                    border: none;
+                }
+                .phone-form {
+                    width: 70px;
+                    margin-left: 20px;
+                }
+                .number-form {
+                    width: calc(100% - 93px);
+                }
+                input {
+                    background-color: #040404;
+                    color: white;
+                }
+                button[type="submit"] {
+                    width: 300px;
+                    &:hover {
+                        color: white;
                     }
                 }
             }

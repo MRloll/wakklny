@@ -58,7 +58,7 @@ button:focus {
   background: linear-gradient(to right, #C3194D, #514596);
   color: white;
   margin: 20px auto;
-  width: 180px;
+  width: 134px;
   height: 50px;
   border: none;
 }
@@ -74,6 +74,19 @@ button:focus {
 @media (max-width: 767px) {
   .base-button {
     width: 130px;
+  }
+}
+
+.bottom-button {
+  position: absolute;
+  bottom: 41px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (max-width: 575px) {
+  .bottom-button {
+    position: unset;
+    transform: translateX(0%);
   }
 }
 
@@ -183,14 +196,6 @@ header .advantages .item .wrapper .text,
 .modal .modal-dialog .modal-content#package-content .modal-body img {
   width: 85px;
 }
-.modal .modal-dialog .modal-content#package-content .modal-footer button {
-  margin-top: 200px;
-}
-@media (max-width: 767px) {
-  .modal .modal-dialog .modal-content#package-content .modal-footer button {
-    margin-top: 20px;
-  }
-}
 .modal .modal-dialog .modal-content .container {
   height: 100%;
 }
@@ -235,6 +240,8 @@ header .advantages .item .wrapper .text,
 .modal .modal-dialog .modal-content .container form > .wrapper .modal-header button {
   margin: 0;
   position: absolute;
+  top: 10px;
+  right: 15px;
 }
 .modal .modal-dialog .modal-content .container form > .wrapper .modal-header .heading {
   margin: 50px auto 20px;
@@ -243,6 +250,48 @@ header .advantages .item .wrapper .text,
   width: 300px;
 }
 .modal .modal-dialog .modal-content .container form > .wrapper .modal-footer .base-button:hover {
+  color: white;
+}
+.modal .modal-dialog .modal-content .order {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #040404;
+}
+.modal .modal-dialog .modal-content .order .modal-header {
+  border: none;
+}
+.modal .modal-dialog .modal-content .order .modal-header span {
+  margin: 0;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+.modal .modal-dialog .modal-content .order .modal-header .heading {
+  margin: 50px auto 20px;
+}
+.modal .modal-dialog .modal-content .order .modal-body,
+.modal .modal-dialog .modal-content .order .modal-footer {
+  border: none;
+}
+.modal .modal-dialog .modal-content .order .phone-form {
+  width: 70px;
+  margin-left: 20px;
+}
+.modal .modal-dialog .modal-content .order .number-form {
+  width: calc(100% - 93px);
+}
+.modal .modal-dialog .modal-content .order input {
+  background-color: #040404;
+  color: white;
+}
+.modal .modal-dialog .modal-content .order button[type=submit] {
+  width: 300px;
+}
+.modal .modal-dialog .modal-content .order button[type=submit]:hover {
   color: white;
 }
 

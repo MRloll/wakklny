@@ -17,43 +17,63 @@ $(function(){
         return true;
     }
     
+    // make phone input not accepting letters
     $("form #phoneNom").on("keypress ", function(event) {
         return isNumberKey(event)
     })
 
+    // validate on key press
     $("form input").on("keypress blur", function(e) {
-        if(e.target.id == "name" && $("#name").val().length >= 4) {
-            $("#name").removeClass("is-invalid").addClass("is-valid")
+        console.log(e.target.id)
+        if($(e.target).hasClass("name") && $(e.target).val().length >= 4) {
+            $(e.target).removeClass("is-invalid").addClass("is-valid")
         }
         
-        if(e.target.id == "phoneNom" && $("#phoneNom").val().length == 9) {
-            $("#phoneNom").removeClass("is-invalid").addClass("is-valid")
+        if($(e.target).hasClass("phone-nom") && $(e.target).val().length == 9) {
+            $(e.target).removeClass("is-invalid").addClass("is-valid")
         }
 
-        if(e.target.id == "email" && isEmailAddress($("form #email").val())) {
-            $("#email").removeClass("is-invalid").addClass("is-valid")
+        if($(e.target).hasClass("email") && isEmailAddress($(e.target).val())) {
+            $(e.target).removeClass("is-invalid").addClass("is-valid")
         }
     })
 
-    $(form).on("submit", function(e) {
-        for (let i = 0; i < $("form input").length; i++) {            
-
-            if(!isEmailAddress($("form #email").val())) {
-                $("form #email").addClass("is-invalid");
-                e.preventDefault()
+    // function to loop throw inpu fields
+    function loopThruInputs(el, event) {
+        for (let i = 0; i < $(el).find("input").length; i++) {       
+            if(!isEmailAddress($(el).find("#email").val())) {
+                $(el).find("#email").addClass("is-invalid");
+                event.preventDefault();
             }
 
-            if($("form input")[i].id == "name" && $("form #name").val().length < 5) {
-                $("form #name").addClass("is-invalid");
-                e.preventDefault();
+            if($(el).find("#name").val().length < 5) {
+                $(el).find("#name").addClass("is-invalid");
+                event.preventDefault();
             }
 
-            if($("form input")[i].id == "phoneNom" && $("#phoneNom").val().length < 9) {
-                $("#phoneNom").addClass("is-invalid");
-                e.preventDefault();
+            if($(el).find("input#phoneNom").val().length < 9) {
+                
+                $(el).find("#phoneNom").addClass("is-invalid");
+                event.preventDefault();
             }
         }
-    });
+    }
+
+    // Choosing to validate which form depending on submitted form
+    $("button[type='submit'], input[type='submit']").on("click", function(el) {
+
+        if($(el.target).data("target") == ".main-contact") {
+            loopThruInputs(".contact-us form", el)
+        }
+
+        if($(el.target).data("target") == ".package-order") {
+            loopThruInputs(".modal .package-order", el)
+        }
+
+        if($(el.target).data("target") == ".service-order") {
+            loopThruInputs(".modal .service-order", el)
+        }
+    }); 
 
     // =========================
     // cahnging modal content
@@ -71,12 +91,28 @@ $(function(){
     // packages content
     $(".packages button").on("click", function() {
         $("#package-content").show();
-        console.log("yes")
     });
 
     $("button.package-content-close").on("click", function() {
         $("#package-content").fadeOut();
     });
+
+
+    // =========================
+    // displaying order modal
+    // =========================
+    $(".modal .to-order-form").on("click", function() {
+        $(this).parents(".wrapper").next(".order").fadeIn();
+    });
+
+
+    // =========================
+    // hiding order modal
+    // =========================
+    $(".order .return").on("click", function() {
+        $(this).parents(".order").fadeOut();
+    });
+
 
 
     
