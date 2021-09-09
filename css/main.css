@@ -262,6 +262,7 @@ header .advantages .item .wrapper .text,
   background-color: #040404;
 }
 .modal .modal-dialog .modal-content .order .modal-header {
+  text-align: center;
   border: none;
 }
 .modal .modal-dialog .modal-content .order .modal-header span {

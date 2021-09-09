@@ -80,7 +80,7 @@ $(function(){
     // =========================
 
     // services content
-    $(".advantages").on("click", function() {
+    $(".home-advantages").on("click", function() {
         $("#service-content").show();
     });
 
@@ -102,7 +102,7 @@ $(function(){
     // displaying order modal
     // =========================
     $(".modal .to-order-form").on("click", function() {
-        $(this).parents(".wrapper").next(".order").fadeIn();
+        $(this).parents(".wrapper").fadeOut().next(".order").fadeIn();
     });
 
 
@@ -110,11 +110,24 @@ $(function(){
     // hiding order modal
     // =========================
     $(".order .return").on("click", function() {
-        $(this).parents(".order").fadeOut();
+        $(this).parents(".order").fadeOut().prev(".wrapper").fadeIn();
     });
 
+    $('[data-fancybox="gallery"]').fancybox({
+        loop:true,
+        animationEffect: "zoom-in-out",
+        transitionEffect: "circular",
+        transitionDuration: 500,
+        buttons: [
+            "zoom",
+            "share",
+            "slideShow",
+            "fullScreen",
+            "download",
+            "thumbs",
+            "close",
+        ],        
+    });
 
-
-    
 });
 
