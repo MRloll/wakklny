@@ -299,6 +299,7 @@ header .advantages .item .wrapper .text,
 header {
   background: url(../imgs/home-bg.png) no-repeat;
   background-size: cover;
+  background-position: center;
   height: 100vh;
   position: relative;
 }
@@ -477,10 +478,17 @@ header .white-line {
 
 footer ul li {
   margin-bottom: 20px;
+  display: flex;
 }
 footer ul.social li {
   display: inline-block;
   margin-left: 15px;
+}
+footer .news input:last-of-type {
+  margin-right: 0;
+}
+footer .news input:last-of-type:hover {
+  color: white;
 }
 footer .copy-right img {
   width: 40px;
@@ -488,6 +496,17 @@ footer .copy-right img {
 @media (min-width: 992px) {
   footer .paragraph {
     width: 70%;
+  }
+}
+@media (max-width: 767px) {
+  footer ul li {
+    font-size: 14px;
+  }
+  footer .copy-right img {
+    margin-left: 0 !important;
+  }
+  footer .copy-right > * {
+    display: block;
   }
 }
 

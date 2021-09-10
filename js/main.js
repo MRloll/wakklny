@@ -113,21 +113,5 @@ $(function(){
         $(this).parents(".order").fadeOut().prev(".wrapper").fadeIn();
     });
 
-    $('[data-fancybox="gallery"]').fancybox({
-        loop:true,
-        animationEffect: "zoom-in-out",
-        transitionEffect: "circular",
-        transitionDuration: 500,
-        buttons: [
-            "zoom",
-            "share",
-            "slideShow",
-            "fullScreen",
-            "download",
-            "thumbs",
-            "close",
-        ],        
-    });
-
 });
 

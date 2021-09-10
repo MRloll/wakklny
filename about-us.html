@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/about-us.css">
+        <title>Document</title>
+    </head>
+
+    <body>
+
+        <div class="modal fade text-center" id="modal" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content" id="service-content">
+                    <div class="container">
+                        <form action="post">
+                            <div class="wrapper">
+                                <div class="modal-header">
+                                    <button type="button " class="close service-content-close" data-dismiss="modal"
+                                        aria-label="Close">
+                                        <img src="./imgs/cross-x.svg" alt="cross">
+                                    </button>
+                                    <div class="heading">
+                                        <div class="flexy-heading mb-3">
+                                            <img src="./imgs/heading-line.png" alt="line">
+                                            <h2>طلب خدمة</h2>
+                                            <img src="./imgs/heading-line.png" alt="line">
+                                        </div>
+                                        <p>
+                                            قم باختيار الخدمات التي تحتاجها وملئ البيانات المطلوبه وسيتم التواصل معك في
+                                            أقرب
+                                            وقت ممكن
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="advantages w-100" class="btn btn-primary">
+                                        <div class="row position-relative">
+                                            <div class="col-md-3 col-6  item">
+                                                <input type="checkbox" id="serve-1" name="serve-1" value="serve-1">
+                                                <label for="serve-1" class="wrapper">
+                                                    <div class="img">
+                                                        <img src="./imgs/digi-marketing.svg" alt="idea">
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>التسويق الرقمي وإدارة حسابات
+                                                            التواصل الاجتماعي</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-3 col-6 item">
+                                                <input type="checkbox" id="serve-2" name="serve-2" value="serve-2">
+                                                <label for="serve-2" class="wrapper">
+                                                    <div class="img">
+                                                        <img src="./imgs/online-shop.svg" alt="idea">
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>الخدمات المساندة لمشاريع
+                                                            التجارة الإلكترونية</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-3 col-6 item">
+                                                <input type="checkbox" id="serve-3" name="serve-3" value="serve-3">
+                                                <label for="serve-3" class="wrapper">
+                                                    <div class="img">
+                                                        <img src="./imgs/web-development.svg" alt="idea">
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>تصميم وتطوير المواقع والمتاجر الإلكترونية</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-3 col-6 item">
+                                                <input type="checkbox" id="serve-4" name="serve-4" value="serve-4">
+                                                <label for="serve-4" class="wrapper">
+                                                    <div class="img">
+                                                        <img src="./imgs/app.svg" alt="idea">
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>تصميم وتطوير تطبيقات الجوال</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-3 col-6  item">
+                                                <input type="checkbox" id="serve-5" name="serve-5" value="serve-5">
+                                                <label for="serve-5" class="wrapper">
+                                                    <div class="img">
+                                                        <img src="./imgs/paper-roll.svg" alt="idea">
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>خدمات الطباعة والمنتجات الدعائية</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-3 col-6 item">
+                                                <input type="checkbox" id="serve-6" name="serve-6" value="serve-6">
+                                                <label for="serve-6" class="wrapper">
+                                                    <div class="img">
+                                                        <img src="./imgs/printing.svg" alt="idea">
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>البحوث التسويقية</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-3 col-6 item">
+                                                <input type="checkbox" id="serve-7" name="serve-7" value="serve-7">
+                                                <label for="serve-7" class="wrapper">
+                                                    <div class="img">
+                                                        <img src="./imgs/vlogger.svg" alt="idea">
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>خدمات التصوير والأنتاج الدعائي والأعلاني</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-3 col-6 item">
+                                                <input type="checkbox" id="serve-8" name="serve-8" value="serve-8">
+                                                <label for="serve-8" class="wrapper">
+                                                    <div class="img">
+                                                        <img src="./imgs/seo.svg" alt="idea">
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>تحسين محركات البحث – SEO</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-3 col-6  item">
+                                                <input type="checkbox" id="serve-9" name="serve-9" value="serve-9">
+                                                <label for="serve-9" class="wrapper">
+                                                    <div class="img">
+                                                        <img src="./imgs/stock-market.svg" alt="idea">
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>استراتيجية العلامة التجارية</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-3 col-6 item">
+                                                <input type="checkbox" id="serve-10" name="serve-10" value="serve-10">
+                                                <label for="serve-10" class="wrapper">
+                                                    <div class="img">
+                                                        <img src="./imgs/content-management.svg" alt="idea">
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>صناعة محتوى ابداعي</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-3 col-6 item">
+                                                <input type="checkbox" id="serve-11" name="serve-11" value="serve-11">
+                                                <label for="serve-11" class="wrapper">
+                                                    <div class="img">
+                                                        <img src="./imgs/branding.svg" alt="idea">
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>ابتكار هوية العلامة التجاريه</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-3 col-6 item">
+                                                <input type="checkbox" id="serve-12" name="serve-12" value="serve-12">
+                                                <label for="serve-12" class="wrapper">
+                                                    <div class="img">
+                                                        <img src="./imgs/target.svg" alt="idea">
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>اعداد خطط تسويقيه مبتكرة</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <span class="btn btn-primary base-button to-order-form">التالي</span>
+                                </div>
+                            </div>
+                            <div class="order service-order text-right">
+                                <div class="modal-header">
+                                    <span class="close return position-absolute">
+                                        <img src="./imgs/return.png" alt="cross">
+                                    </span>
+                                    <div class="heading">
+                                        <div class="flexy-heading mb-3">
+                                            <img src="./imgs/heading-line.png" alt="line">
+                                            <h2>طلب خدمة</h2>
+                                            <img src="./imgs/heading-line.png" alt="line">
+                                        </div>
+                                        <p>
+                                            أملئ البيانات الخاصة بك وسيتم التواصل معك في أقرب وقت ممكن
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-md-6 col-12">
+                                            <div class="form-group">
+                                                <label for="name">أسمك بالكامل</label>
+                                                <input type="text" class="form-control name" id="name"
+                                                    placeholder="أكتب أسمك هنا">
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group  phone-form">
+                                                    <label for="phoneCode">رقم الجوال</label>
+                                                    <input type="text" readonly class="form-control " id="phoneCode"
+                                                        placeholder="+966">
+                                                </div>
+                                                <div class="form-group number-form">
+                                                    <label for="phoneNom" class="invisible">phone</label>
+                                                    <input maxlength="9" type="text" class="form-control phone-nom"
+                                                        id="phoneNom" placeholder="مثال : 12 345 6789">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-12">
+                                            <div class="form-group">
+                                                <label for="company-name">اسم الشركة أو المؤسسة</label>
+                                                <input type="text" class="form-control company-name" id="company-name"
+                                                    placeholder="أكتب الاسم هنا">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="email">البريد الإلكتروني</label>
+                                                <input type="email" class="form-control email" id="email"
+                                                    placeholder="مثال : example@gmail.com">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-primary bottom-button base-button"
+                                        data-target=".service-order">أطلب
+                                        الآن</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header>
+            <div class="overlay"></div>
+            <div class="container ">
+                <nav class="navbar navbar-expand-lg navbar-dark reverse  ">
+                    <a class="navbar-brand" href="#"><img src="./imgs/logo.png" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="./index.html">الرئيسية</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="./about-us.html">عن المؤسسة</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./packages.html">الباقات</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " href="./gallery.html">أعمالنا</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " href="./contact-us.html">اتصل بنا</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline mr-auto float-left">
+                            <button class="btn btn-outline-light base-button" type="submit">
+                                ملف تعريفي
+                                <svg class="mr-2" id="fi-rr-download" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24">
+                                    <path id="Path_784" data-name="Path 784"
+                                        d="M23,16h0a1,1,0,0,0-1,1v4a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V17a1,1,0,0,0-1-1H1a1,1,0,0,0-1,1v4a3,3,0,0,0,3,3H21a3,3,0,0,0,3-3V17A1,1,0,0,0,23,16Z"
+                                        fill="#fff" />
+                                    <path id="Path_785" data-name="Path 785"
+                                        d="M5.293,13.538l4.586,4.587a3.007,3.007,0,0,0,4.242,0l4.586-4.586a1,1,0,1,0-1.414-1.414L13,16.416V1a1,1,0,0,0-2,0V16.417L6.707,12.124a1,1,0,1,0-1.414,1.414Z"
+                                        fill="#fff" />
+                                </svg>
+
+                            </button>
+                            <button class="btn btn-outline-light mr-3 base-button" type="submit">طلب خدمة</button>
+                        </form>
+                    </div>
+                </nav>
+                <div class="demo text-center d-flex justify-content-center align-items-center text-light w-100">
+                    <h1>عن المؤسسة</h1>
+                </div>
+            </div>
+        </header>
+
+        <section class="about-us-section">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-md-6 col-12">
+                        <div class="img">
+                            <img src="./imgs/about-img.png" alt="about" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="wrapper h-100 pr-5">
+                            <div class="img text-right mb-5">
+                                <img src="./imgs/top-zegzag.png" alt="img">
+                            </div>
+                            <div class="text text-right">
+                                <h2>عن مؤسسة وكلني</h2>
+                                <p>نحن في مؤسسة وكلني شريكك الإبداعي في أعمالك وتجارتك و نقدم لك كافة الخدمات
+                                    المساندة ونسعى لتوفير وقتك وجهدك ونوفر عليك الوقت والجهد في البحث عن مزودي
+                                    الخدمات ألعمالك ونسعى لتوفير لك خدمات أحترافية بجودة عالية وبأسعار معقولة تناسبك</p>
+                            </div>
+                            <div class="img text-left ml-5 mt-5">
+                                <img src="./imgs/bottom-zegzag.png" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="our-vision text-center">
+            <div class="container">
+                <div class="heading">
+                    <div class="flexy-heading mb-3">
+                        <img src="./imgs/heading-line.png" alt="line">
+                        <h2>رؤيتنا</h2>
+                        <img src="./imgs/heading-line.png" alt="line">
+                    </div>
+                    <p>
+                        الريادة في إبداع وتطوير أفكار تسويقية وأعالنية خالقة على مستوى المنطقة العربية
+                    </p>
+                </div>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/oyQsCIp_ZRs"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="services text-center">
+            <div class="container">
+                <div class="heading">
+                    <div class="flexy-heading mb-3">
+                        <img src="./imgs/heading-line.png" alt="line">
+                        <h2>خدماتنا</h2>
+                        <img src="./imgs/heading-line.png" alt="line">
+                    </div>
+                    <p>
+                        الريادة في إبداع وتطوير أفكار تسويقية وأعالنية خالقة على مستوى المنطقة العربية </p>
+                </div>
+                <div class="advantages home-advantages w-100" type="button" class="btn btn-primary" data-toggle="modal"
+                    data-target="#modal">
+                    <div class="row position-relative">
+                        <div class="col-md-3 col-6  item">
+                            <div class="img">
+                                <img src="./imgs/digi-marketing.svg" alt="idea">
+                            </div>
+                            <div class="wrapper">
+                                <div class="text">
+                                    <p>التسويق الرقمي وإدارة حسابات
+                                        التواصل الاجتماعي</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 item">
+                            <div class="img">
+                                <img src="./imgs/online-shop.svg" alt="idea">
+                            </div>
+                            <div class="wrapper">
+                                <div class="text">
+                                    <p>الخدمات المساندة لمشاريع
+                                        التجارة الإلكترونية</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 item">
+                            <div class="img">
+                                <img src="./imgs/web-development.svg" alt="idea">
+                            </div>
+                            <div class="wrapper">
+                                <div class="text">
+                                    <p>تصميم وتطوير المواقع والمتاجر الإلكترونية</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 item">
+                            <div class="img">
+                                <img src="./imgs/app.svg" alt="idea">
+                            </div>
+                            <div class="wrapper">
+                                <div class="text">
+                                    <p>تصميم وتطوير تطبيقات الجوال</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6  item">
+                            <div class="img">
+                                <img src="./imgs/paper-roll.svg" alt="idea">
+                            </div>
+                            <div class="wrapper">
+                                <div class="text">
+                                    <p>خدمات الطباعة والمنتجات الدعائية</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 item">
+                            <div class="img">
+                                <img src="./imgs/printing.svg" alt="idea">
+                            </div>
+                            <div class="wrapper">
+                                <div class="text">
+                                    <p>البحوث التسويقية</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 item">
+                            <div class="img">
+                                <img src="./imgs/vlogger.svg" alt="idea">
+                            </div>
+                            <div class="wrapper">
+                                <div class="text">
+                                    <p>خدمات التصوير والأنتاج الدعائي والأعلاني</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 item">
+                            <div class="img">
+                                <img src="./imgs/seo.svg" alt="idea">
+                            </div>
+                            <div class="wrapper">
+                                <div class="text">
+                                    <p>تحسين محركات البحث – SEO</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6  item">
+                            <div class="img">
+                                <img src="./imgs/stock-market.svg" alt="idea">
+                            </div>
+                            <div class="wrapper">
+                                <div class="text">
+                                    <p>استراتيجية العلامة التجارية</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 item">
+                            <div class="img">
+                                <img src="./imgs/content-management.svg" alt="idea">
+                            </div>
+                            <div class="wrapper">
+                                <div class="text">
+                                    <p>صناعة محتوى ابداعي</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 item">
+                            <div class="img">
+                                <img src="./imgs/branding.svg" alt="idea">
+                            </div>
+                            <div class="wrapper">
+                                <div class="text">
+                                    <p>ابتكار هوية العلامة التجاريه</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 item">
+                            <div class="img">
+                                <img src="./imgs/target.svg" alt="idea">
+                            </div>
+                            <div class="wrapper">
+                                <div class="text">
+                                    <p>اعداد خطط تسويقيه مبتكرة</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="our-team">
+            <div class="container">
+                <div class="heading text-center">
+                    <div class="flexy-heading mb-3">
+                        <img src="./imgs/heading-line.png" alt="line">
+                        <h2>فريق العمل</h2>
+                        <img src="./imgs/heading-line.png" alt="line">
+                    </div>
+                    <p>
+                        نقدم لك نخبه من أفضل الإداريين والمطوريين ومنشئ المحتوي والتصميم لبناء أفكارك وتنفيذها بشكل
+                        احترافي</p>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="wrapper">
+                            <img src="./imgs/person-1.png" class="img-fluid" alt="img">
+                            <div class="overlay">
+                                <ul class="social">
+                                    <li><a href="#"><img src="./imgs/facebook-logo.svg" alt="logo"></a></li>
+                                    <li><a href="#"><img src="./imgs/twitter-logo-silhouette.svg" alt="logo"></a></li>
+                                    <li><a href="#"><img src="./imgs/youtube.svg" alt="logo"></a></li>
+                                    <li><a href="#"><img src="./imgs/instagram (1).svg" alt="logo"></a></li>
+                                    <li><a href="#"><img src="./imgs/linkedin-logo.svg" alt="logo"></a></li>
+                                </ul>
+                                <div class="name">
+                                    <h5>حازم مصطفي</h5>
+                                    <span>مطور تطبيقات مواقع</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="wrapper">
+                            <img src="./imgs/person-1.png" class="img-fluid" alt="img">
+                            <div class="overlay">
+                                <ul class="social">
+                                    <li><a href="#"><img src="./imgs/facebook-logo.svg" alt="logo"></a></li>
+                                    <li><a href="#"><img src="./imgs/twitter-logo-silhouette.svg" alt="logo"></a></li>
+                                    <li><a href="#"><img src="./imgs/youtube.svg" alt="logo"></a></li>
+                                    <li><a href="#"><img src="./imgs/instagram (1).svg" alt="logo"></a></li>
+                                    <li><a href="#"><img src="./imgs/linkedin-logo.svg" alt="logo"></a></li>
+                                </ul>
+                                <div class="name">
+                                    <h5>حازم مصطفي</h5>
+                                    <span>مطور تطبيقات مواقع</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="wrapper">
+                            <img src="./imgs/person-1.png" class="img-fluid" alt="img">
+                            <div class="overlay">
+                                <ul class="social">
+                                    <li><a href="#"><img src="./imgs/facebook-logo.svg" alt="logo"></a></li>
+                                    <li><a href="#"><img src="./imgs/twitter-logo-silhouette.svg" alt="logo"></a></li>
+                                    <li><a href="#"><img src="./imgs/youtube.svg" alt="logo"></a></li>
+                                    <li><a href="#"><img src="./imgs/instagram (1).svg" alt="logo"></a></li>
+                                    <li><a href="#"><img src="./imgs/linkedin-logo.svg" alt="logo"></a></li>
+                                </ul>
+                                <div class="name">
+                                    <h5>حازم مصطفي</h5>
+                                    <span>مطور تطبيقات مواقع</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="wrapper">
+                            <img src="./imgs/person-1.png" class="img-fluid" alt="img">
+                            <div class="overlay">
+                                <ul class="social">
+                                    <li><a href="#"><img src="./imgs/facebook-logo.svg" alt="logo"></a></li>
+                                    <li><a href="#"><img src="./imgs/twitter-logo-silhouette.svg" alt="logo"></a></li>
+                                    <li><a href="#"><img src="./imgs/youtube.svg" alt="logo"></a></li>
+                                    <li><a href="#"><img src="./imgs/instagram (1).svg" alt="logo"></a></li>
+                                    <li><a href="#"><img src="./imgs/linkedin-logo.svg" alt="logo"></a></li>
+                                </ul>
+                                <div class="name">
+                                    <h5>حازم مصطفي</h5>
+                                    <span>مطور تطبيقات مواقع</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="wrapper">
+                            <img src="./imgs/person-1.png" class="img-fluid" alt="img">
+                            <div class="overlay">
+                                <ul class="social">
+                                    <li><a href="#"><img src="./imgs/facebook-logo.svg" alt="logo"></a></li>
+                                    <li><a href="#"><img src="./imgs/twitter-logo-silhouette.svg" alt="logo"></a></li>
+                                    <li><a href="#"><img src="./imgs/youtube.svg" alt="logo"></a></li>
+                                    <li><a href="#"><img src="./imgs/instagram (1).svg" alt="logo"></a></li>
+                                    <li><a href="#"><img src="./imgs/linkedin-logo.svg" alt="logo"></a></li>
+                                </ul>
+                                <div class="name">
+                                    <h5>حازم مصطفي</h5>
+                                    <span>مطور تطبيقات مواقع</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="wrapper">
+                            <img src="./imgs/person-1.png" class="img-fluid" alt="img">
+                            <div class="overlay">
+                                <ul class="social">
+                                    <li><a href="#"><img src="./imgs/facebook-logo.svg" alt="logo"></a></li>
+                                    <li><a href="#"><img src="./imgs/twitter-logo-silhouette.svg" alt="logo"></a></li>
+                                    <li><a href="#"><img src="./imgs/youtube.svg" alt="logo"></a></li>
+                                    <li><a href="#"><img src="./imgs/instagram (1).svg" alt="logo"></a></li>
+                                    <li><a href="#"><img src="./imgs/linkedin-logo.svg" alt="logo"></a></li>
+                                </ul>
+                                <div class="name">
+                                    <h5>حازم مصطفي</h5>
+                                    <span>مطور تطبيقات مواقع</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <footer class=" text-right">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-12 mb-5 mb-md-0 text-center text-md-right">
+                        <div class="wrapper">
+                            <h5 class="mb-5">من نحن</h5>
+                            <div class="img mb-4">
+                                <img src="./imgs/LogoWaklni.png" alt="logo">
+                            </div>
+                            <p class="paragraph">
+                                نحن في مؤسسة وكلني شريكك الإبداعي في أعمالك
+                                وتجارتك ونقدم لك كافة الخدمات المساندة ونسعى لتوفير
+                                وقتك وجهدك ونوفر عليك الوقت والجهد في البحث عن
+                                مزودي الخدمات ألعمالك ونسعى لتوفير لك خدمات أحترافية
+                                بجودة عالية وبأسعار معقولة تناسبك
+                            </p>
+                            <div>
+                                <img src="./imgs/pin.png" alt="pin">
+                                <span class="mr-2 d-inline-block">
+                                    شارع الملك فهد - الرياض - المملكة العربية السعودية
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <h5 class="mb-5">الروابط</h5>
+                        <ul>
+                            <li><img class="ml-2" src="./imgs/Polygon 2.svg" alt="polygn"><a href="#">عن المؤسسة</a>
+                            </li>
+                            <li><img class="ml-2" src="./imgs/Polygon 2.svg" alt="polygn"><a href="#">خدماتنا</a>
+                            </li>
+                            <li><img class="ml-2" src="./imgs/Polygon 2.svg" alt="polygn"><a href="#">الباقات</a>
+                            </li>
+                            <li><img class="ml-2" src="./imgs/Polygon 2.svg" alt="polygn"><a
+                                    href="./gallery.html">أعمالنا</a>
+                            </li>
+                            <li><img class="ml-2" src="./imgs/Polygon 2.svg" alt="polygn"><a href="#">اتصل بنا</a>
+                            </li>
+                            <li><img class="ml-2" src="./imgs/Polygon 2.svg" alt="polygn"><a href="#">طلب خدمة /
+                                    باقة</a>
+                            </li>
+                            <li><img class="ml-2" src="./imgs/Polygon 2.svg" alt="polygn"><a href="#">أنضم إلينا</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <h5 class="mb-5">هل أنت مهتم بالتواصل معنا ؟</h5>
+                        <ul>
+                            <li>
+                                <img class="ml-2" src="./imgs/phone.svg" alt="phone"><span>00966554058269</span>
+                            </li>
+                            <li>
+                                <img class="ml-2" src="./imgs/phone-call.svg" alt="phone-call"><span>0112637861</span>
+                            </li>
+                            <li>
+                                <img class="ml-2" src="./imgs/email (1).svg" alt="email"> <a
+                                    href="mailto:Support@waklni.com">Support@waklni.com</a>
+                            </li>
+                        </ul>
+                        <h6 class="mb-3">تابعنا عبر</h6>
+                        <ul class="social">
+                            <li><a href="#"><img src="./imgs/youtube.svg" alt="youtube"></a></li>
+                            <li><a href="#"><img src="./imgs/instagram (1).svg" alt="instagram (1)"></a></li>
+                            <li><a href="#"><img src="./imgs/linkedin-logo.svg" alt="linkedin"></a></li>
+                            <li><a href="#"><img src="./imgs/twitter-logo-silhouette.svg" alt="twitter"></a></li>
+                            <li><a href="#"><img src="./imgs/facebook-logo.svg" alt="twitter"></a></li>
+                        </ul>
+                        <h6>النشرة البريدية</h6>
+                        <form class="news" action="" method="post">
+                            <input class="form-control mt-3" type="email" required value="مثال : Example@gmail.com">
+                            <input type="submit" value="اشترك الآن" class="base-button btn">
+                        </form>
+
+                    </div>
+                </div>
+                <div class="copy-right mt-5 mb-4 text-center">
+                    <a href="#"><img class="ml-5" src="./imgs/LogoWaklni.png" alt="logo"></a>
+                    <span>
+                        &copy; جميع الحقوق محفوظة لدي مؤسسة وكلني 2021
+                    </span>
+                </div>
+            </div>
+        </footer>
+        <script src="./js/jQuery-3-4-1.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/main.js"></script>
+        <script>
+            $('.carousel').carousel({
+                interval: false
+            })
+
+        </script>
+    </body>
+
+</html>

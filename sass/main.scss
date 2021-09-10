@@ -4,6 +4,7 @@
 header {
     background: url(../imgs/home-bg.png) no-repeat;
     background-size: cover;
+    background-position: center;
     height: 100vh;
     position: relative;
     nav.navbar-dark {
@@ -227,12 +228,19 @@ footer {
     ul {
         li {
             margin-bottom: 20px;
+            display: flex;
         }
         &.social {
             li {
                 display: inline-block;
                 margin-left: 15px;
             }
+        }
+    }
+    .news input:last-of-type {
+        margin-right: 0;
+        &:hover {
+            color: white;
         }
     }
     .copy-right {
@@ -243,6 +251,19 @@ footer {
     @media #{$minMedium} {
         .paragraph {
             width: 70%;
+        }
+    }
+    @media #{$maxMobile} {
+        ul li {
+            font-size: 14px;
+        }
+        .copy-right {
+            img {
+                margin-left: 0 !important;
+            }
+            & > * {
+                display: block;
+            }
         }
     }
 }

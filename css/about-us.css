@@ -1,0 +1,49 @@
+header {
+  background-image: url(../imgs/about-us-bg.png);
+  height: auto;
+}
+
+.our-team div[class^=col-] {
+  margin: 15px 0;
+}
+.our-team .wrapper {
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  color: white;
+}
+.our-team .wrapper img {
+  width: 100%;
+}
+.our-team .wrapper .overlay {
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.our-team .wrapper .overlay ul.social {
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+.our-team .wrapper .overlay ul.social li a {
+  width: 32px;
+  height: 32px;
+  margin-left: 20px;
+  margin-bottom: 7px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  align-items: center;
+  border-radius: 6px;
+}
+.our-team .wrapper .overlay .name {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  text-align: right;
+}
+.our-team .wrapper:hover .overlay {
+  opacity: 0.8;
+}
+
+/*# sourceMappingURL=about-us.css.map */

@@ -6,13 +6,43 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/bootstrap.min.css">
-        <link rel="stylesheet" href="./css/jquery.fancybox.min.css">
         <link rel="stylesheet" href="./css/main.css">
-        <link rel="stylesheet" href="./css/work.css">
-        <title>Gallery</title>
+        <title>Contact us</title>
     </head>
+    <style>
+        header {
+            background-image: url(./imgs/contact-bg.png);
+            height: auto;
+        }
+
+        .contact-us ul li {
+            display: inline-block;
+            margin: 20px 0 20px 10px;
+        }
+
+        .contact-us ul:last-of-type li {
+            margin-top: 10px;
+        }
+
+        @media (max-width: 575px) {
+            .contact-us ul li {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            .contact-us span {
+                font-size: 14px;
+            }
+
+            .contact-us h6 {
+                margin-top: 20px;
+            }
+        }
+    </style>
 
     <body>
+
+
         <header>
             <div class="overlay"></div>
             <div class="container ">
@@ -33,10 +63,10 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="./packages.html">الباقات</a>
                             </li>
-                            <li class="nav-item active">
+                            <li class="nav-item ">
                                 <a class="nav-link " href="./gallery.html">أعمالنا</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item active">
                                 <a class="nav-link " href="./contact-us.html">اتصل بنا</a>
                             </li>
                         </ul>
@@ -59,76 +89,100 @@
                     </div>
                 </nav>
                 <div class="demo text-center d-flex justify-content-center align-items-center text-light w-100">
-                    <h1>معرض الاعمال</h1>
+                    <h1>اتصل بنا</h1>
                 </div>
             </div>
         </header>
 
-        <section class="ourWork">
+        <section class="contact-us">
             <div class="container">
-                <div class="row">
-
-                    <div class="col-sm-4 item mb-4">
-
-                        <div class="img-container" data-src="./imgs/gallery-1.png" data-fancybox="gallery">
-                            <img class="img-fluid" src="imgs/gallery-1.png" alt="Wakely">
-                            <div class="myoverlay text-center">
-                                <img src="imgs/cam.png" alt="camera">
-                            </div>
-
-                        </div>
+                <div class="heading text-center mb-5">
+                    <div class="flexy-heading mb-3">
+                        <img src="./imgs/heading-line.png" alt="line">
+                        <h2>أتصل بنا</h2>
+                        <img src="./imgs/heading-line.png" alt="line">
                     </div>
-                    <div class="col-sm-4 item mb-4">
-
-                        <div class="img-container" data-src="./imgs/gallery-2.png" data-fancybox="gallery">
-                            <img class="img-fluid" src="imgs/gallery-2.png" alt="Wakely">
-                            <div class="myoverlay text-center">
-                                <img src="imgs/cam.png" alt="camera">
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-sm-4 item mb-4">
-                        <div class="img-container" data-src="./imgs/gallery-3.png" data-fancybox="gallery">
-                            <img class="img-fluid" src="imgs/gallery-3.png" alt="Wakely">
-                            <div class="myoverlay text-center">
-                                <img src="imgs/cam.png" alt="camera">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 item mb-4">
-
-                        <div class="img-container" data-src="./imgs/gallery-4.png" data-fancybox="gallery">
-                            <img class="img-fluid" src="imgs/gallery-4.png" alt="Wakely">
-                            <div class="myoverlay text-center">
-                                <img src="imgs/cam.png" alt="camera">
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-sm-4 item mb-4">
-
-                        <div class="img-container" data-src="./imgs/gallery-5.png" data-fancybox="gallery">
-                            <img class="img-fluid" src="imgs/gallery-5.png" alt="Wakely">
-                            <div class="myoverlay text-center">
-                                <img src="imgs/cam.png" alt="camera">
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-sm-4 item mb-4">
-                        <div class="img-container" data-src="./imgs/gallery-6.png" data-fancybox="gallery">
-                            <img class="img-fluid" src="imgs/gallery-6.png" alt="Wakely">
-                            <div class="myoverlay text-center">
-                                <img src="imgs/cam.png" alt="camera">
-                            </div>
-                        </div>
-                    </div>
+                    <p>يمكنكم التواصل عبر المحادثة المباشرة في الواتس اب وفق الأوقات التي نتواجد بها أو تعبئة طلب
+                        استشارة وتحديد موعد
+                        للتواصل
+                        معكم</p>
                 </div>
 
+                <div class="row">
+                    <div class="col-lg-6 col-12 order-1 order-lg-0 mt-lg-0 mt-5">
+                        <div class="form text-right">
+                            <form>
+                                <div class="form-group">
+                                    <label for="name">أسمك بالكامل</label>
+                                    <input type="text" class="form-control name" id="name" data-target="name"
+                                        placeholder="أكتب أسمك هنا">
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group  phone-form">
+                                        <label for="phoneCode">رقم الجوال</label>
+                                        <input type="text" readonly class="form-control phone" id="phoneCode"
+                                            data-target="phone" placeholder="+966">
+                                    </div>
+                                    <div class="form-group number-form">
+                                        <label for="phoneNom" class="invisible">phone</label>
+                                        <input maxlength="9" type="text" class="form-control phone-nom" id="phoneNom"
+                                            data-target="email" placeholder="مثال : 12 345 6789">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">البريد الإلكتروني</label>
+                                    <input type="email" class="form-control email" id="email"
+                                        placeholder="مثال : example@gmail.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="topic">الموضوع</label>
+                                    <textarea class="form-control" name="topic" id="topic" cols="30"
+                                        rows="10"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <input data-target=".main-contact" type="submit" class="base-button btn mx-0"
+                                        value="ارسال">
+                                </div>
+                            </form>
+                            <div class="d-flex">
+                                <div class="img">
+                                    <img src="./imgs/pin.png" alt="pin">
+                                </div>
+                                <span class="mr-2 d-inline-block">
+                                    شارع الملك فهد - الرياض - المملكة العربية السعودية
+                                </span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <img class="ml-2" src="./imgs/phone.svg" alt="phone"><span>00966554058269</span>
+                                </li>
+                                <li>
+                                    <img class="ml-2" src="./imgs/phone-call.svg"
+                                        alt="phone-call"><span>0112637861</span>
+                                </li>
+                                <li>
+                                    <img class="ml-2" src="./imgs/email (1).svg" alt="email"> <a
+                                        href="mailto:Support@waklni.com">Support@waklni.com</a>
+                                </li>
+                            </ul>
+                            <h6>تابعنا عبر</h6>
+                            <ul class="social">
+                                <li><a href="#"><img src="./imgs/youtube.svg" alt="youtube"></a></li>
+                                <li><a href="#"><img src="./imgs/instagram (1).svg" alt="instagram (1)"></a></li>
+                                <li><a href="#"><img src="./imgs/linkedin-logo.svg" alt="linkedin"></a></li>
+                                <li><a href="#"><img src="./imgs/twitter-logo-silhouette.svg" alt="twitter"></a></li>
+                                <li><a href="#"><img src="./imgs/facebook-logo.svg" alt="twitter"></a></li>
+                            </ul>
 
-                <div class="text-center w-100">
-                    <button class="workBtn">عرض المزيد</button>
+
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 col-12 ">
+                        <iframe class=" w-100"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54509.51618639983!2d31.433187127882988!3d31.363262790498172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f767107a1783ff%3A0xff3cf42b9cebe27a!2z2YXYt9i52YUg2LTZg9i02YjZgw!5e0!3m2!1sen!2seg!4v1630930963693!5m2!1sen!2seg"
+                            style="border:0; border-radius: 6px;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
                 </div>
             </div>
         </section>
@@ -169,7 +223,8 @@
                             <li><img class="ml-2" src="./imgs/Polygon 2.svg" alt="polygn"><a
                                     href="./gallery.html">أعمالنا</a>
                             </li>
-                            <li><img class="ml-2" src="./imgs/Polygon 2.svg" alt="polygn"><a href="#">اتصل بنا</a>
+                            <li><img class="ml-2" src="./imgs/Polygon 2.svg" alt="polygn"><a
+                                    href="./contact-us.html">اتصل بنا</a>
                             </li>
                             <li><img class="ml-2" src="./imgs/Polygon 2.svg" alt="polygn"><a href="#">طلب خدمة /
                                     باقة</a>
@@ -218,27 +273,7 @@
         </footer>
         <script src="./js/jQuery-3-4-1.min.js"></script>
         <script src="./js/bootstrap.min.js"></script>
-        <script src="./js/jquery.fancybox.min.js"></script>
         <script src="./js/main.js"></script>
-        <script>
-            $('[data-fancybox="gallery"]').fancybox({
-                loop: true,
-                animationEffect: "zoom-in-out",
-                transitionEffect: "circular",
-                transitionDuration: 500,
-                buttons: [
-                    "zoom",
-                    "share",
-                    "slideShow",
-                    "fullScreen",
-                    "download",
-                    "thumbs",
-                    "close",
-                ],
-            });
-
-
-        </script>
     </body>
 
 </html>
