@@ -90,12 +90,21 @@ $(function(){
     });
 
     // packages content
-    $(".packages button").on("click", function() {
+    $(".normall-packs button").on("click", function() {
         $("#package-content").show();
     });
 
     $("button.package-content-close").on("click", function() {
         $("#package-content").fadeOut();
+    });
+
+    // buissness content
+    $(".buissness-packs button").on("click", function() {
+        $("#buissness-packs").show();
+    });
+
+    $("#buissness-packs button.package-content-close").on("click", function() {
+        $("#buissness-packs").fadeOut();
     });
 
 

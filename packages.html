@@ -12,7 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/main.css">
-        <title>Contact us</title>
+        <title>Packages</title>
     </head>
     <style>
         header {
@@ -443,6 +443,142 @@
                         </form>
                     </div>
                 </div>
+                <div class="modal-content" id="buissness-packs">
+                    <div class="container">
+                        <form action="post">
+                            <div class="wrapper">
+                                <div class="modal-header">
+                                    <button type="button" class="close package-content-close" data-dismiss="modal"
+                                        aria-label="Close">
+                                        <img src="./imgs/cross-x.svg" alt="cross">
+                                    </button>
+                                    <div class="heading">
+                                        <div class="flexy-heading mb-3">
+                                            <img src="./imgs/heading-line.png" alt="line">
+                                            <h2>طلب باقة</h2>
+                                            <img src="./imgs/heading-line.png" alt="line">
+                                        </div>
+                                        <p>
+                                            قم بتحديد الباقة التي تناسبك
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="advantages w-100" class="btn btn-primary">
+                                        <div class="row position-relative">
+                                            <div class="col-md-3 col-6  item">
+                                                <input type="checkbox" id="favourites" name="favourites"
+                                                    value="favourites">
+                                                <label for="favourites" class="wrapper">
+                                                    <div class="img">
+                                                        <img src="./imgs/favourites.svg" alt="favourites">
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>الباقة الأساسية</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-3 col-6 item">
+                                                <input type="checkbox" id="diamond" name="diamond" value="diamond">
+                                                <label for="diamond" class="wrapper">
+                                                    <div class="img">
+                                                        <img src="./imgs/diamond.svg" alt="idea">
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>الباقة الماسية</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-3 col-6 item">
+                                                <input type="checkbox" id="crown" name="crown" value="crown">
+                                                <label for="crown" class="wrapper">
+                                                    <div class="img">
+                                                        <img src="./imgs/crown.svg" alt="crown">
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>الباقة الملكية</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-3 col-6 item">
+                                                <input type="checkbox" id="edited" name="edited" value="edited">
+                                                <label for="edited" class="wrapper">
+                                                    <div class="img">
+                                                        <img src="./imgs/megaphone.svg" alt="megaphone">
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>باقة مخصصة</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <span class="btn btn-primary base-button bottom-button to-order-form">التالي</span>
+                                </div>
+                            </div>
+                            <div class="order package-order text-right">
+                                <div class="modal-header">
+                                    <span class="close return position-absolute">
+                                        <img src="./imgs/return.png" alt="cross">
+                                    </span>
+                                    <div class="heading">
+                                        <div class="flexy-heading mb-3">
+                                            <img src="./imgs/heading-line.png" alt="line">
+                                            <h2>طلب باقة</h2>
+                                            <img src="./imgs/heading-line.png" alt="line">
+                                        </div>
+                                        <p>
+                                            أملئ البيانات الخاصة بك وسيتم التواصل معك في أقرب وقت ممكن
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-md-6 col-12">
+                                            <div class="form-group">
+                                                <label for="name">أسمك بالكامل</label>
+                                                <input type="text" class="form-control name" id="name"
+                                                    placeholder="أكتب أسمك هنا">
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group  phone-form">
+                                                    <label for="phoneCode">رقم الجوال</label>
+                                                    <input type="text" readonly class="form-control " id="phoneCode"
+                                                        placeholder="+966">
+                                                </div>
+                                                <div class="form-group number-form">
+                                                    <label for="phoneNom" class="invisible">phone</label>
+                                                    <input maxlength="9" type="text" class="form-control phone-nom"
+                                                        id="phoneNom" placeholder="مثال : 12 345 6789">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-12">
+                                            <div class="form-group">
+                                                <label for="company-name">اسم الشركة أو المؤسسة</label>
+                                                <input type="text" class="form-control" id="company-name"
+                                                    placeholder="أكتب الاسم هنا">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="email">البريد الإلكتروني</label>
+                                                <input type="email" class="form-control email" id="email"
+                                                    placeholder="مثال : example@gmail.com">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-primary bottom-button base-button"
+                                        data-target=".package-order">أطلب
+                                        الآن</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -498,7 +634,7 @@
             </div>
         </header>
 
-        <section class="packages" id="packages">
+        <section class="packages normall-packs" id="packages">
             <div class="container">
                 <div class="heading text-center mb-5">
                     <div class="flexy-heading mb-3">
@@ -790,6 +926,235 @@
 
             </div>
         </section>
+        <section class="packages buissness-packs">
+            <div class="container">
+                <div class="heading text-center mb-5">
+                    <div class="flexy-heading mb-3">
+                        <img src="./imgs/heading-line.png" alt="line">
+                        <h2>باقات الهوية التجارية
+                        </h2>
+                        <img src="./imgs/heading-line.png" alt="line">
+                    </div>
+                    <p>
+                        نقدم لكم باقات في متناول اليد ومناسبة للجميع من أجل الاستفادة بخدماتنا الحصرية </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 d-lg-none"></div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-lg-0 mb-5">
+                        <div class="wrapper">
+                            <div class="package-name text-center">
+                                <div class="img">
+                                    <img src="./imgs/favourites.svg" alt="favourite">
+                                </div>
+                                <span class="mt-2 d-inline-block">
+                                    الباقة الاساسية
+                                </span>
+                            </div>
+                            <div class="package-serve">
+                                <div class="serve">
+                                    <div class="img">
+                                        <img src="./imgs/checked.svg" alt="checked">
+                                    </div>
+                                    <span>تقديم نموذجين للشعار</span>
+                                </div>
+                                <div class="serve">
+                                    <div class="img">
+                                        <img src="./imgs/checked.svg" alt="checked">
+                                    </div>
+                                    <span>إضافة نموذج ثالث عند الطلب
+                                    </span>
+                                </div>
+                                <div class="serve">
+                                    <div class="img">
+                                        <img src="./imgs/checked.svg" alt="checked">
+                                    </div>
+                                    <span>ثالث تعديالت مجانية على الشعار المختار
+                                    </span>
+                                </div>
+                                <div class="serve">
+                                    <div class="img">
+                                        <img src="./imgs/checked.svg" alt="checked">
+                                    </div>
+                                    <span>التسليم خالل ثالث أيام عمل</span>
+                                </div>
+                                <div class="serve">
+                                    <div class="img">
+                                        <img src="./imgs/checked.svg" alt="checked">
+                                    </div>
+                                    <span>تسليم الملف األصلي للشعار</span>
+                                </div>
+                            </div>
+                            <div class="ask-serve">
+                                <form action="POST">
+                                    <button class="btn base-button" type="button" class="btn btn-primary"
+                                        data-toggle="modal" data-target="#modal">
+                                        أطلب الآن
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 d-lg-none"></div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-md-0 mb-5">
+                        <div class="wrapper">
+                            <div class="package-name text-center">
+                                <div class="img">
+                                    <img src="./imgs/diamond.svg" alt="favourite">
+                                </div>
+                                <span class="mt-2 d-inline-block">
+                                    الباقة الماسية
+                                </span>
+                            </div>
+                            <div class="package-serve">
+                                <div class="serve">
+                                    <div class="img">
+                                        <img src="./imgs/checked.svg" alt="checked">
+                                    </div>
+                                    <span>تقديم ثالث نماذج للشعار
+                                    </span>
+                                </div>
+                                <div class="serve">
+                                    <div class="img">
+                                        <img src="./imgs/checked.svg" alt="checked">
+                                    </div>
+                                    <span>تقديم نماذج أضافية في حال احتاج العميل
+                                    </span>
+                                </div>
+                                <div class="serve">
+                                    <div class="img">
+                                        <img src="./imgs/checked.svg" alt="checked">
+                                    </div>
+                                    <span>6 تعديالت مجانية على الشعار المختار
+                                    </span>
+                                </div>
+                                <div class="serve">
+                                    <div class="img">
+                                        <img src="./imgs/checked.svg" alt="checked">
+                                    </div>
+                                    <span>نماذج تخيلية ثلاثية الابعاد للشعار
+
+                                    </span>
+                                </div>
+                                <div class="serve">
+                                    <div class="img">
+                                        <img src="./imgs/checked.svg" alt="checked">
+                                    </div>
+                                    <span>التسليم خلال 5 أيام عمل
+                                    </span>
+                                </div>
+                                <div class="serve">
+                                    <div class="img">
+                                        <img src="./imgs/checked.svg" alt="checked">
+                                    </div>
+                                    <span>تسليم الملف التعريفي للشعار + ملف الشعار األصل
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="ask-serve">
+                                <form action="POST">
+                                    <button class="btn base-button" type="button" class="btn btn-primary"
+                                        data-toggle="modal" data-target="#modal">
+                                        أطلب الآن
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="wrapper">
+                            <div class="package-name text-center">
+                                <div class="img">
+                                    <img src="./imgs/crown.svg" alt="favourite">
+                                </div>
+                                <span class="mt-2 d-inline-block">
+                                    الباقة الملكية
+                                </span>
+                            </div>
+                            <div class="package-serve">
+                                <div class="serve">
+                                    <div class="img">
+                                        <img src="./imgs/checked.svg" alt="checked">
+                                    </div>
+                                    <span>تقديم ثالث نماذج مختلفة للشعار
+                                    </span>
+                                </div>
+                                <div class="serve">
+                                    <div class="img">
+                                        <img src="./imgs/checked.svg" alt="checked">
+                                    </div>
+                                    <span>تقديم نماذج إضافية في حال احتاج العميل
+                                    </span>
+                                </div>
+                                <div class="serve">
+                                    <div class="img">
+                                        <img src="./imgs/checked.svg" alt="checked">
+                                    </div>
+                                    <span>تعديالت غير محدودة على الشعار
+                                    </span>
+                                </div>
+                                <div class="serve">
+                                    <div class="img">
+                                        <img src="./imgs/checked.svg" alt="checked">
+                                    </div>
+                                    <span>تسليم األعمال خالل 10 الى 15 يوم
+                                    </span>
+                                </div>
+                                <div class="serve">
+                                    <div class="img">
+                                        <img src="./imgs/checked.svg" alt="checked">
+                                    </div>
+                                    <span>تسليم الملف التعريفي للشعار + ملف الشعار األصل
+                                    </span>
+                                </div>
+                                <div class="serve">
+                                    <div class="img">
+                                        <img src="./imgs/checked.svg" alt="checked">
+                                    </div>
+                                    <span>تصميم كافة أصناف الهوية التجارية الخاصة بالعميل
+                                    </span>
+                                </div>
+                                <div class="serve">
+                                    <div class="img">
+                                        <img src="./imgs/checked.svg" alt="checked">
+                                    </div>
+                                    <span>تصميم الهوية بشكل يتناسب مع تصميم الشعار
+                                    </span>
+                                </div>
+                                <div class="serve">
+                                    <div class="img">
+                                        <img src="./imgs/checked.svg" alt="checked">
+                                    </div>
+                                    <span>تسليم نماذج تخيلية ثالثية األبعاد للشعار والهوية
+                                    </span>
+                                </div>
+                                <div class="serve">
+                                    <div class="img">
+                                        <img src="./imgs/checked.svg" alt="checked">
+                                    </div>
+                                    <span>تصميم قوالب السوشال ميديا
+                                    </span>
+                                </div>
+                                <div class="serve">
+                                    <div class="img">
+                                        <img src="./imgs/checked.svg" alt="checked">
+                                    </div>
+                                    <span>تقديم أستشارة تسويقية مجانية
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="ask-serve">
+                                <form action="POST">
+                                    <button class="btn base-button" type="button" class="btn btn-primary"
+                                        data-toggle="modal" data-target="#modal">
+                                        أطلب الآن
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
         <footer class=" text-right">
@@ -847,23 +1212,30 @@
                         <h5 class="mb-5">هل أنت مهتم بالتواصل معنا ؟</h5>
                         <ul>
                             <li>
-                                <img class="ml-2" src="./imgs/phone.svg" alt="phone"><span>00966554058269</span>
+                                <img class="ml-2" src="./imgs/phone.svg" alt="phone"><span>00966112637861</span>
                             </li>
                             <li>
-                                <img class="ml-2" src="./imgs/phone-call.svg" alt="phone-call"><span>0112637861</span>
+                                <img class="ml-2" src="./imgs/phone-call.svg"
+                                    alt="phone-call"><span>00966554058269</span>
                             </li>
                             <li>
                                 <img class="ml-2" src="./imgs/email (1).svg" alt="email"> <a
-                                    href="mailto:Support@waklni.com">Support@waklni.com</a>
+                                    href="mailto:info@wakklni.com">info@wakklni.com</a>
                             </li>
                         </ul>
                         <h6 class="mb-3">تابعنا عبر</h6>
                         <ul class="social">
-                            <li><a href="#"><img src="./imgs/youtube.svg" alt="youtube"></a></li>
-                            <li><a href="#"><img src="./imgs/instagram (1).svg" alt="instagram (1)"></a></li>
-                            <li><a href="#"><img src="./imgs/linkedin-logo.svg" alt="linkedin"></a></li>
-                            <li><a href="#"><img src="./imgs/twitter-logo-silhouette.svg" alt="twitter"></a></li>
-                            <li><a href="#"><img src="./imgs/facebook-logo.svg" alt="twitter"></a></li>
+                            <li><a href="#" target="_blank"><img src="./imgs/youtube.svg" alt="youtube"></a></li>
+                            <li><a href="https://www.instagram.com/wakkelni/" target="_blank"><img
+                                        src="./imgs/instagram (1).svg" alt="instagram (1)"></a></li>
+                            <li><a href="#" target="_blank"><img src="./imgs/linkedin-logo.svg" alt="linkedin"></a></li>
+                            <li><a href="https://www.snapchat.com/add/wakelni" target="_blank"><img
+                                        src="./imgs/snapchat.png" alt="snapchat"></a></li>
+                            <li><a href="#" target="_blank"><img src="./imgs/twitter-logo-silhouette.svg"
+                                        alt="twitter"></a></li>
+                            <li><a target="_blank"
+                                    href="https://www.facebook.com/%D9%88%D9%83%D9%84%D9%86%D9%8A-WKLNI-105530241849809/?ref=pages_you_manage"><img
+                                        src="./imgs/facebook-logo.svg" alt="facebook"></a></li>
                         </ul>
                         <!-- <h6>النشرة البريدية</h6>
                         <form class="news" action="" method="post">
