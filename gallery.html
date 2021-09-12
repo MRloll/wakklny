@@ -5,6 +5,11 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords"
+            content="التسويق الالكتروني, التسويق الرقمي ,خدمات الطباعة ,تصميم المواقع الالكترونية , SEO , متجر الكتروني , تصميم تطبيقات ,دعاية وأعلان ,تحسين محركات البحث , أعلان مستهدف, تسويق بالعمولة , تسويق سوشال ميديا  , أدارة سوشال ميديا , أستراتيجية تسويقية  , خطة تسويقية, أعلانات مدفوعة, أعلانات جوجل, Google Ads, مستشار تسويق, التجارة الألكترونية, تصميم هوية تجارية, إدارة التسويق الرقمي, صياغة وتحرير المحتوى, شركة دعاية وأعلان, شركات التسويق, واجهة مستخدم, تصاميم غرافيك, تصوير منتجات, تصميم موقع الكتروني">
+        <meta name="description"
+            content="نحن في مؤسسة وكلني شريكك الإبداعي في أعمالك لدينا  خبراء في صناعة المواقع الإلكترونية والإعلانات وتخطيط التسويق الرقمي، ونخبة من الفنانين والمصممين المحترفين">
+        <link rel="shortcut icon" href="./imgs/logo.svg" type="image/x-icon">
         <link rel="stylesheet" href="./css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/jquery.fancybox.min.css">
         <link rel="stylesheet" href="./css/main.css">
@@ -13,6 +18,294 @@
     </head>
 
     <body>
+        <div class="modal fade text-center" id="modal" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content" id="service-content">
+                    <div class="container">
+                        <form action="post">
+                            <div class="wrapper">
+                                <div class="modal-header">
+                                    <button type="button " class="close service-content-close" data-dismiss="modal"
+                                        aria-label="Close">
+                                        <img src="./imgs/cross-x.svg" alt="cross">
+                                    </button>
+                                    <div class="heading">
+                                        <div class="flexy-heading mb-3">
+                                            <img src="./imgs/heading-line.png" alt="line">
+                                            <h2>طلب خدمة</h2>
+                                            <img src="./imgs/heading-line.png" alt="line">
+                                        </div>
+                                        <p>
+                                            قم باختيار الخدمات التي تحتاجها وملئ البيانات المطلوبه وسيتم التواصل معك في
+                                            أقرب
+                                            وقت ممكن
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="advantages w-100" class="btn btn-primary">
+                                        <div class="row position-relative">
+                                            <div class="col-md-3 col-6  item">
+                                                <input type="checkbox" id="serve-1" name="serve-1" value="serve-1">
+                                                <label for="serve-1" class="wrapper">
+                                                    <div class="img">
+                                                        <img src="./imgs/digi-marketing.svg" alt="idea">
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>التسويق الرقمي وإدارة حسابات
+                                                            التواصل الاجتماعي</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-3 col-6 item">
+                                                <input type="checkbox" id="serve-2" name="serve-2" value="serve-2">
+                                                <label for="serve-2" class="wrapper">
+                                                    <div class="img">
+                                                        <img src="./imgs/online-shop.svg" alt="idea">
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>الخدمات المساندة لمشاريع
+                                                            التجارة الإلكترونية</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-3 col-6 item">
+                                                <input type="checkbox" id="serve-3" name="serve-3" value="serve-3">
+                                                <label for="serve-3" class="wrapper">
+                                                    <div class="img">
+                                                        <img src="./imgs/web-development.svg" alt="idea">
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>تصميم وتطوير المواقع والمتاجر الإلكترونية</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-3 col-6 item">
+                                                <input type="checkbox" id="serve-4" name="serve-4" value="serve-4">
+                                                <label for="serve-4" class="wrapper">
+                                                    <div class="img">
+                                                        <img src="./imgs/app.svg" alt="idea">
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>تصميم وتطوير تطبيقات الجوال</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-3 col-6  item">
+                                                <input type="checkbox" id="serve-5" name="serve-5" value="serve-5">
+                                                <label for="serve-5" class="wrapper">
+                                                    <div class="img">
+                                                        <img src="./imgs/paper-roll.svg" alt="idea">
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>خدمات الطباعة والمنتجات الدعائية</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-3 col-6 item">
+                                                <input type="checkbox" id="serve-6" name="serve-6" value="serve-6">
+                                                <label for="serve-6" class="wrapper">
+                                                    <div class="img">
+                                                        <img src="./imgs/printing.svg" alt="idea">
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>البحوث التسويقية</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-3 col-6 item">
+                                                <input type="checkbox" id="serve-7" name="serve-7" value="serve-7">
+                                                <label for="serve-7" class="wrapper">
+                                                    <div class="img">
+                                                        <img src="./imgs/vlogger.svg" alt="idea">
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>تصوير المنتجات والمشاريع</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-3 col-6 item">
+                                                <input type="checkbox" id="serve-8" name="serve-8" value="serve-8">
+                                                <label for="serve-8" class="wrapper">
+                                                    <div class="img">
+                                                        <img src="./imgs/seo.svg" alt="idea">
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>تحسين محركات البحث – SEO</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-3 col-6  item">
+                                                <input type="checkbox" id="serve-9" name="serve-9" value="serve-9">
+                                                <label for="serve-9" class="wrapper">
+                                                    <div class="img">
+                                                        <img src="./imgs/stock-market.svg" alt="idea">
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>ادارة وتخطيط الحملات الأعلانية المدفوعة</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-3 col-6 item">
+                                                <input type="checkbox" id="serve-10" name="serve-10" value="serve-10">
+                                                <label for="serve-10" class="wrapper">
+                                                    <div class="img">
+                                                        <img src="./imgs/content-management.svg" alt="idea">
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>صناعة محتوى ابداعي</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-3 col-6 item">
+                                                <input type="checkbox" id="serve-11" name="serve-11" value="serve-11">
+                                                <label for="serve-11" class="wrapper">
+                                                    <div class="img">
+                                                        <img src="./imgs/branding.svg" alt="idea">
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>ابتكار هوية العلامة التجاريه</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-3 col-6 item">
+                                                <input type="checkbox" id="serve-12" name="serve-12" value="serve-12">
+                                                <label for="serve-12" class="wrapper">
+                                                    <div class="img">
+                                                        <img src="./imgs/target.svg" alt="idea">
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>بناء الخطة الإستراتيجية والتسويقية</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-3 col-6 item">
+                                                <input type="checkbox" id="serve-12" name="serve-12" value="serve-12">
+                                                <label for="serve-12" class="wrapper">
+                                                    <div class="img">
+                                                        <img src="./imgs/motion.png" alt="idea">
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>الأنتاج المرئي والموشن جرافيك</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-3 col-6 item">
+                                                <input type="checkbox" id="serve-12" name="serve-12" value="serve-12">
+                                                <label for="serve-12" class="wrapper">
+                                                    <div class="img">
+                                                        <img src="./imgs/qrcode.png" alt="idea">
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>خدمة تصميم QR Codes</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-3 col-6 item">
+                                                <input type="checkbox" id="serve-12" name="serve-12" value="serve-12">
+                                                <label for="serve-12" class="wrapper">
+                                                    <div class="img">
+                                                        <img src="./imgs/map.png" alt="idea">
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>اضافة و توثيق المواقع الجغرافية في خرائط Google</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-3 col-6 item">
+                                                <input type="checkbox" id="serve-12" name="serve-12" value="serve-12">
+                                                <label for="serve-12" class="wrapper">
+                                                    <div class="img">
+                                                        <img src="./imgs/voiceover.png" alt="idea">
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>خدمة التعليق الصوتي</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-3 col-6 item">
+                                                <input type="checkbox" id="serve-12" name="serve-12" value="serve-12">
+                                                <label for="serve-12" class="wrapper">
+                                                    <div class="img">
+                                                        <img src="./imgs/famous.png" alt="idea">
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>التنسيق مع المؤثرين والمشاهير</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <span class="btn btn-primary base-button to-order-form">التالي</span>
+                                </div>
+                            </div>
+                            <div class="order service-order text-right">
+                                <div class="modal-header">
+                                    <span class="close return position-absolute">
+                                        <img src="./imgs/return.png" alt="cross">
+                                    </span>
+                                    <div class="heading">
+                                        <div class="flexy-heading mb-3">
+                                            <img src="./imgs/heading-line.png" alt="line">
+                                            <h2>طلب خدمة</h2>
+                                            <img src="./imgs/heading-line.png" alt="line">
+                                        </div>
+                                        <p>
+                                            أملئ البيانات الخاصة بك وسيتم التواصل معك في أقرب وقت ممكن
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-md-6 col-12">
+                                            <div class="form-group">
+                                                <label for="name">أسمك بالكامل</label>
+                                                <input type="text" class="form-control name" id="name"
+                                                    placeholder="أكتب أسمك هنا">
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group  phone-form">
+                                                    <label for="phoneCode">رقم الجوال</label>
+                                                    <input type="text" readonly class="form-control " id="phoneCode"
+                                                        placeholder="+966">
+                                                </div>
+                                                <div class="form-group number-form">
+                                                    <label for="phoneNom" class="invisible">phone</label>
+                                                    <input maxlength="9" type="text" class="form-control phone-nom"
+                                                        id="phoneNom" placeholder="مثال : 12 345 6789">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-12">
+                                            <div class="form-group">
+                                                <label for="company-name">اسم الشركة أو المؤسسة</label>
+                                                <input type="text" class="form-control company-name" id="company-name"
+                                                    placeholder="أكتب الاسم هنا">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="email">البريد الإلكتروني</label>
+                                                <input type="email" class="form-control email" id="email"
+                                                    placeholder="مثال : example@gmail.com">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-primary bottom-button base-button"
+                                        data-target=".service-order">أطلب
+                                        الآن</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <header>
             <div class="overlay"></div>
             <div class="container ">
@@ -40,8 +333,8 @@
                                 <a class="nav-link " href="./contact-us.html">اتصل بنا</a>
                             </li>
                         </ul>
-                        <form class="form-inline mr-auto float-left">
-                            <button class="btn btn-outline-light base-button" type="submit">
+                        <div class="form-inline mr-auto float-left">
+                            <a class="btn btn-outline-light base-button" href="./Profile Low.pdf" target="_blank">
                                 ملف تعريفي
                                 <svg class="mr-2" id="fi-rr-download" xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24">
@@ -52,10 +345,12 @@
                                         d="M5.293,13.538l4.586,4.587a3.007,3.007,0,0,0,4.242,0l4.586-4.586a1,1,0,1,0-1.414-1.414L13,16.416V1a1,1,0,0,0-2,0V16.417L6.707,12.124a1,1,0,1,0-1.414,1.414Z"
                                         fill="#fff" />
                                 </svg>
+                            </a>
+                            <button class="btn btn-outline-light mr-3 base-button ask-serve-btn" data-toggle="modal"
+                                data-target="#modal">طلب
+                                خدمة</button>
+                        </div>
 
-                            </button>
-                            <button class="btn btn-outline-light mr-3 base-button" type="submit">طلب خدمة</button>
-                        </form>
                     </div>
                 </nav>
                 <div class="demo text-center d-flex justify-content-center align-items-center text-light w-100">
@@ -64,7 +359,7 @@
             </div>
         </header>
 
-        <section class="ourWork">
+        <section class="ourWork" id="gallery">
             <div class="container">
                 <div class="row">
 
@@ -160,21 +455,27 @@
                     <div class="col-md-3 col-6">
                         <h5 class="mb-5">الروابط</h5>
                         <ul>
-                            <li><img class="ml-2" src="./imgs/Polygon 2.svg" alt="polygn"><a href="#">عن المؤسسة</a>
-                            </li>
-                            <li><img class="ml-2" src="./imgs/Polygon 2.svg" alt="polygn"><a href="#">خدماتنا</a>
-                            </li>
-                            <li><img class="ml-2" src="./imgs/Polygon 2.svg" alt="polygn"><a href="#">الباقات</a>
+                            <li><img class="ml-2" src="./imgs/Polygon 2.svg" alt="polygn"><a href="./index.html">عن
+                                    المؤسسة</a>
                             </li>
                             <li><img class="ml-2" src="./imgs/Polygon 2.svg" alt="polygn"><a
-                                    href="./gallery.html">أعمالنا</a>
+                                    href="./index.html">خدماتنا</a>
                             </li>
-                            <li><img class="ml-2" src="./imgs/Polygon 2.svg" alt="polygn"><a href="#">اتصل بنا</a>
+                            <li><img class="ml-2" src="./imgs/Polygon 2.svg" alt="polygn"><a
+                                    href="./packages.html">الباقات</a>
                             </li>
-                            <li><img class="ml-2" src="./imgs/Polygon 2.svg" alt="polygn"><a href="#">طلب خدمة /
+                            <li><img class="ml-2" src="./imgs/Polygon 2.svg" alt="polygn"><a href="#gallery">أعمالنا</a>
+                            </li>
+                            <li><img class="ml-2" src="./imgs/Polygon 2.svg" alt="polygn"><a
+                                    href="./contact-us.html">اتصل بنا</a>
+                            </li>
+                            <li><img class="ml-2" src="./imgs/Polygon 2.svg" alt="polygn"><a href="./index.html">طلب
+                                    خدمة /
                                     باقة</a>
                             </li>
-                            <li><img class="ml-2" src="./imgs/Polygon 2.svg" alt="polygn"><a href="#">أنضم إلينا</a>
+                            <li><img class="ml-2" src="./imgs/Polygon 2.svg" alt="polygn"><a
+                                    href="./contact-us.html">أنضم
+                                    إلينا</a>
                             </li>
                         </ul>
                     </div>
@@ -200,11 +501,11 @@
                             <li><a href="#"><img src="./imgs/twitter-logo-silhouette.svg" alt="twitter"></a></li>
                             <li><a href="#"><img src="./imgs/facebook-logo.svg" alt="twitter"></a></li>
                         </ul>
-                        <h6>النشرة البريدية</h6>
+                        <!-- <h6>النشرة البريدية</h6>
                         <form class="news" action="" method="post">
                             <input class="form-control mt-3" type="email" required value="مثال : Example@gmail.com">
                             <input type="submit" value="اشترك الآن" class="base-button btn">
-                        </form>
+                        </form> -->
 
                     </div>
                 </div>

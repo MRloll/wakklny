@@ -197,6 +197,10 @@ header .advantages,
                         .modal-body {
                             div[class^="col-"] {
                                 margin-bottom: 20px;
+                                img {
+                                    width: 73px;
+                                    height: 73px;
+                                }
                             }
                             input {
                                 display: none;

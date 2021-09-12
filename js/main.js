@@ -80,7 +80,8 @@ $(function(){
     // =========================
 
     // services content
-    $(".home-advantages").on("click", function() {
+    $(".home-advantages,  .ask-serve-btn").on("click", function() {
+        console.log("yes")
         $("#service-content").show();
     });
 
