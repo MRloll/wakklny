@@ -1,67 +1,45 @@
-@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap");
+@import url(https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap);
 * {
-    font-family: "Cairo", sans-serif;
+    font-family: Tajawal, sans-serif;
 }
-
-/*************
-    body
-*************/
 .container,
 body {
     position: relative;
 }
-
-/*************
-    ul
-*************/
 ul {
     padding: 0;
     margin: 0;
     list-style: none;
 }
-
-/*************
-    section
-*************/
 footer,
 section {
     padding-top: 100px;
 }
-
-/*************
-    a (link)
-*************/
 a {
-    outline: none;
+    outline: 0;
     color: inherit;
 }
 a:hover {
     text-decoration: none;
     color: inherit;
 }
-
-/*************
-    Button
-**************/
 button {
-    outline: none;
+    outline: 0;
 }
 button:focus {
-    outline: none;
+    outline: 0;
     box-shadow: none;
 }
-
 .btn:active {
     background-image: linear-gradient(to right, #c3194d, #514596) !important;
 }
-
 .base-button {
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(to right, #c3194d, #514596);
-    color: white;
+    color: #fff;
     margin: 20px auto;
     width: 134px;
     height: 50px;
@@ -81,7 +59,6 @@ button:focus {
         width: 130px;
     }
 }
-
 .bottom-button {
     position: absolute;
     bottom: 41px;
@@ -91,10 +68,9 @@ button:focus {
 @media (max-width: 575px) {
     .bottom-button {
         position: unset;
-        transform: translateX(0%);
+        transform: translateX(0);
     }
 }
-
 .overlay {
     position: absolute;
     width: 100%;
@@ -105,7 +81,6 @@ button:focus {
     opacity: 0.8;
     z-index: 0;
 }
-
 @media (min-width: 576px) {
     .container {
         max-width: 100%;
@@ -116,7 +91,6 @@ button:focus {
         max-width: 90%;
     }
 }
-
 .heading .flexy-heading {
     display: flex;
     justify-content: center;
@@ -137,12 +111,8 @@ button:focus {
     }
 }
 
-header .advantages,
-.services .advantages {
-    cursor: pointer;
-}
-header .advantages .item .img,
-.services .advantages .item .img {
+.services .advantages .item .img,
+header .advantages .item .img {
     position: relative;
     display: flex;
     justify-content: center;
@@ -157,8 +127,8 @@ header .advantages .item .img,
     overflow: hidden;
     margin-bottom: -44px;
 }
-header .advantages .item .wrapper,
-.services .advantages .item .wrapper {
+.services .advantages .item .wrapper,
+header .advantages .item .wrapper {
     border-radius: 6px;
     min-height: 150px;
     transition: all 0.5s ease;
@@ -169,12 +139,11 @@ header .advantages .item .wrapper,
     align-items: center;
     width: 100%;
 }
-header .advantages .item .wrapper .text,
-.services .advantages .item .wrapper .text {
-    font-weight: bold;
+.services .advantages .item .wrapper .text,
+header .advantages .item .wrapper .text {
+    font-weight: 700;
     width: 100%;
 }
-
 .modal {
     padding: 0 !important;
     background-color: #040404;
@@ -189,7 +158,7 @@ header .advantages .item .wrapper .text,
     height: 100%;
     background-color: #040404;
     position: absolute;
-    color: white;
+    color: #fff;
     border: none;
 }
 .modal .modal-dialog .modal-content#buissness-packs,
@@ -341,7 +310,7 @@ header .advantages .item .wrapper .text,
     > .wrapper
     .modal-footer
     .base-button:hover {
-    color: white;
+    color: #fff;
 }
 .modal .modal-dialog .modal-content .order {
     display: none;
@@ -373,20 +342,22 @@ header .advantages .item .wrapper .text,
     width: 70px;
     margin-left: 20px;
 }
+.modal .modal-dialog .modal-content .order .phone-form label {
+    font-size: 14px;
+}
 .modal .modal-dialog .modal-content .order .number-form {
     width: calc(100% - 93px);
 }
 .modal .modal-dialog .modal-content .order input {
     background-color: #040404;
-    color: white;
+    color: #fff;
 }
 .modal .modal-dialog .modal-content .order button[type="submit"] {
     width: 300px;
 }
 .modal .modal-dialog .modal-content .order button[type="submit"]:hover {
-    color: white;
+    color: #fff;
 }
-
 header {
     background: url(../imgs/home-bg.jpeg) no-repeat;
     background-size: cover;
@@ -401,8 +372,8 @@ header nav.navbar-dark .navbar-brand img {
     width: 70px;
 }
 header nav.navbar-dark .navbar-toggler {
-    border-color: white;
-    outline: none;
+    border-color: #fff;
+    outline: 0;
 }
 header nav.navbar-dark ul.navbar-nav li.nav-item {
     position: relative;
@@ -417,8 +388,8 @@ header nav.navbar-dark ul.navbar-nav li.nav-item.active::after {
     right: 0;
 }
 header nav.navbar-dark ul.navbar-nav li.nav-item a.nav-link {
-    color: white;
-    font-weight: bold;
+    color: #fff;
+    font-weight: 700;
 }
 header .demo {
     min-height: 500px;
@@ -437,7 +408,7 @@ header .demo .carousel-indicators li.active {
 }
 header a.base-button,
 header button.base-button {
-    background: transparent;
+    background: 0 0;
     border: 1px solid #fff;
     width: auto;
 }
@@ -447,7 +418,7 @@ header .white-line {
     height: 104px;
     width: 100%;
     right: 0;
-    background-color: white;
+    background-color: #fff;
 }
 @media (max-width: 767px) {
     header {
@@ -456,7 +427,7 @@ header .white-line {
     header .carousel-indicators {
         bottom: 15%;
     }
-    header nav .base-button {
+    nav .base-button {
         width: 91px;
         font-size: 9px;
     }
@@ -483,7 +454,6 @@ header .white-line {
         bottom: 50%;
     }
 }
-
 .about-us-section .wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -491,12 +461,10 @@ header .white-line {
 .about-us-section .wrapper > div {
     width: 100%;
 }
-
 .our-vision iframe {
     width: 100%;
     height: 500px;
 }
-
 .services .advantages div[class^="col-"] {
     margin-top: 15px;
 }
@@ -516,9 +484,9 @@ header .white-line {
     padding-top: 40px;
     background-color: none;
 }
-
 .packages .wrapper {
-    box-shadow: 0px 3px 31px -12px #8b8686;
+    height: 100%;
+    box-shadow: 0 3px 31px -12px #8b8686;
     padding: 20px 0;
 }
 .packages .wrapper .package-serve .serve {
@@ -531,9 +499,8 @@ header .white-line {
     margin-right: 10px;
 }
 .packages .ask-serve button.base-button:hover {
-    color: white;
+    color: #fff;
 }
-
 .sponsors div[class^="col-"] {
     margin: 15px 0;
 }
@@ -560,16 +527,18 @@ header .white-line {
         width: 100%;
     }
 }
-
 .contact-us .form form .phone-form {
     width: 70px;
     margin-left: 20px;
+}
+.contact-us .form form .phone-form label {
+    font-size: 14px;
 }
 .contact-us .form form .number-form {
     width: calc(100% - 93px);
 }
 .contact-us .form form input[type="submit"]:hover {
-    color: white;
+    color: #fff;
 }
 .contact-us iframe {
     min-height: 600px;
@@ -579,7 +548,6 @@ header .white-line {
         height: 100%;
     }
 }
-
 footer ul li {
     margin-bottom: 20px;
     display: flex;
@@ -596,7 +564,7 @@ footer .news input:last-of-type {
     margin-right: 0;
 }
 footer .news input:last-of-type:hover {
-    color: white;
+    color: #fff;
 }
 footer .copy-right img {
     width: 40px;
@@ -617,5 +585,3 @@ footer .copy-right img {
         display: block;
     }
 }
-
-/*# sourceMappingURL=main.css.map */

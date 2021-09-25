@@ -8,6 +8,7 @@ header {
     height: 100vh;
     position: relative;
     nav.navbar-dark {
+        padding: 0;
         .navbar-brand img {
             width: 70px;
         }
@@ -53,6 +54,7 @@ header {
     button.base-button {
         background: transparent;
         border: 1px solid #fff;
+        width: auto;
     }
     .white-line {
         position: absolute;
@@ -69,6 +71,10 @@ header {
         }
         .carousel-indicators {
             bottom: 15%;
+        }
+        nav .base-button {
+            width: 91px;
+            font-size: 9px;
         }
     }
 
